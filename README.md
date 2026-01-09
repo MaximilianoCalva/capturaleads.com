@@ -1,14 +1,14 @@
-# CapturaLeads.com
+# 🎯 CapturaLeads - Plataforma de Gestión de Leads
 
-**Landing Page de Marketing - Plataforma de Captura y Gestión de Leads**
+**Captura, gestiona y convierte tus leads de forma profesional**
 
 ---
 
 ## 📋 Descripción
 
-Este es el **sitio web de marketing** de CapturaLeads, diseñado para atraer y convertir clientes potenciales que necesitan una solución profesional de captura y gestión de leads.
+CapturaLeads es una plataforma SaaS que permite a empresas y emprendedores capturar leads a través de landing pages personalizadas y gestionarlos desde un dashboard intuitivo. Cada cliente obtiene un link único con formulario de registro y acceso completo a sus datos en tiempo real.
 
-**Nota:** Este repositorio contiene la landing page de marketing. Para el dashboard de gestión de leads, ver el repositorio `Dashboard-capturaleads.com`.
+**Nota:** Este repositorio contiene la **landing page de marketing**. Para el dashboard de gestión, ver `Dashboard-capturaleads.com`.
 
 ---
 
