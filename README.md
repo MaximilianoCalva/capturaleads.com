@@ -101,7 +101,13 @@ Todos los componentes están diseñados como **snippets HTML** listos para usar 
 
 ## 🔄 Versión
 
-**v1.0.0** - Enero 2026
-- Componentes iniciales de landing page
-- Header, Footer, Hero section
-- Diseño responsive y optimizado
+**v2.0.0** - Enero 2026
+- ✅ Landing page completa con todas las secciones
+- ✅ Header y Footer con navegación actualizada
+- ✅ Hero section con dashboard preview
+- ✅ Secciones de Características (completa y resumen)
+- ✅ Secciones de Precios (completa y resumen)
+- ✅ Secciones de Contacto (completa y resumen)
+- ✅ Header de Dashboard para clientes
+- ✅ Diseño 100% responsive
+- ✅ Optimizado para WordPress/Elementor
