@@ -107,13 +107,22 @@
         }
 
         /* Responsive */
+        @media (max-width: 968px) {
+            .contact-methods {
+                max-width: 600px;
+                margin-left: auto;
+                margin-right: auto;
+                margin-bottom: 40px;
+            }
+        }
+
         @media (max-width: 768px) {
             .contacto-resumen-wrapper {
-                padding: 60px 15px;
+                padding: 70px 20px;
             }
 
             .section-title {
-                font-size: 32px;
+                font-size: 36px;
             }
 
             .section-subtitle {
@@ -124,9 +133,32 @@
                 grid-template-columns: 1fr;
                 gap: 20px;
             }
+        }
+
+        @media (max-width: 576px) {
+            .contacto-resumen-wrapper {
+                padding: 60px 15px;
+            }
+
+            .section-title {
+                font-size: 28px;
+            }
+
+            .section-subtitle {
+                font-size: 17px;
+            }
+
+            .contact-method {
+                padding: 25px 20px;
+            }
+
+            .method-icon {
+                font-size: 40px;
+            }
 
             .cta-buttons {
                 flex-direction: column;
+                gap: 15px;
             }
 
             .cta-button {
