@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contacto Resumen - CapturaLeads</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .contacto-resumen-wrapper {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 80px 20px;
+            color: white;
+        }
+
+        .contacto-container {
+            max-width: 900px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .section-title {
+            font-size: 42px;
+            font-weight: 700;
+            margin-bottom: 20px;
+        }
+
+        .section-subtitle {
+            font-size: 20px;
+            margin-bottom: 40px;
+            opacity: 0.9;
+        }
+
+        .contact-methods {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .contact-method {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 30px 20px;
+            border-radius: 15px;
+            backdrop-filter: blur(10px);
+            transition: all 0.3s ease;
+        }
+
+        .contact-method:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-5px);
+        }
+
+        .method-icon {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .method-title {
+            font-size: 18px;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        .method-info {
+            font-size: 15px;
+            opacity: 0.9;
+        }
+
+        .cta-buttons {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            flex-wrap: wrap;
+        }
+
+        .cta-button {
+            background: white;
+            color: #667eea;
+            padding: 18px 40px;
+            border-radius: 50px;
+            font-size: 18px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+            box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
+        }
+
+        .cta-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(255, 255, 255, 0.4);
+        }
+
+        .cta-button.secondary {
+            background: rgba(255, 255, 255, 0.2);
+            color: white;
+            border: 2px solid white;
+        }
+
+        .cta-button.secondary:hover {
+            background: rgba(255, 255, 255, 0.3);
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .contacto-resumen-wrapper {
+                padding: 60px 15px;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+
+            .section-subtitle {
+                font-size: 18px;
+            }
+
+            .contact-methods {
+                grid-template-columns: 1fr;
+                gap: 20px;
+            }
+
+            .cta-buttons {
+                flex-direction: column;
+            }
+
+            .cta-button {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="contacto-resumen-wrapper">
+        <div class="contacto-container">
+            <h2 class="section-title">¿Listo para Comenzar?</h2>
+            <p class="section-subtitle">Contáctanos y descubre cómo CapturaLeads puede transformar tu negocio</p>
+
+            <div class="contact-methods">
+                <div class="contact-method">
+                    <div class="method-icon">📧</div>
+                    <h3 class="method-title">Email</h3>
+                    <p class="method-info">contacto@capturaleads.com</p>
+                </div>
+
+                <div class="contact-method">
+                    <div class="method-icon">📱</div>
+                    <h3 class="method-title">Teléfono</h3>
+                    <p class="method-info">+52 33 1234 5678</p>
+                </div>
+
+                <div class="contact-method">
+                    <div class="method-icon">💬</div>
+                    <h3 class="method-title">Chat</h3>
+                    <p class="method-info">Disponible en vivo</p>
+                </div>
+            </div>
+
+            <div class="cta-buttons">
+                <a href="#demo" class="cta-button">🚀 Solicitar Demo Gratis</a>
+                <a href="#contacto" class="cta-button secondary">Ver Más Opciones</a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

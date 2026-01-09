@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Precios Resumen - CapturaLeads</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .precios-resumen-wrapper {
+            background: #f8f9fa;
+            padding: 80px 20px;
+        }
+
+        .precios-container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .section-title {
+            font-size: 42px;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 15px;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .pricing-cards {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+            margin-bottom: 40px;
+        }
+
+        .price-card {
+            background: white;
+            border-radius: 15px;
+            padding: 35px 25px;
+            text-align: center;
+            box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+            transition: all 0.3s ease;
+        }
+
+        .price-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.2);
+        }
+
+        .price-card.popular {
+            border: 2px solid #667eea;
+            position: relative;
+        }
+
+        .popular-badge {
+            position: absolute;
+            top: -12px;
+            left: 50%;
+            transform: translateX(-50%);
+            background: #667eea;
+            color: white;
+            padding: 5px 20px;
+            border-radius: 20px;
+            font-size: 12px;
+            font-weight: 700;
+        }
+
+        .plan-name {
+            font-size: 20px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .plan-price {
+            font-size: 36px;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        .plan-price span {
+            font-size: 16px;
+            color: #999;
+        }
+
+        .plan-description {
+            font-size: 14px;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .plan-cta {
+            display: block;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: white;
+            padding: 12px 25px;
+            border-radius: 50px;
+            font-size: 14px;
+            font-weight: 700;
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .plan-cta:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .cta-section {
+            text-align: center;
+        }
+
+        .cta-link {
+            color: #667eea;
+            font-size: 16px;
+            font-weight: 600;
+            text-decoration: none;
+            border-bottom: 2px solid #667eea;
+            transition: all 0.3s ease;
+        }
+
+        .cta-link:hover {
+            color: #764ba2;
+            border-color: #764ba2;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .pricing-cards {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .precios-resumen-wrapper {
+                padding: 60px 15px;
+            }
+
+            .section-title {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="precios-resumen-wrapper">
+        <div class="precios-container">
+            <div class="section-header">
+                <h2 class="section-title">Planes Flexibles</h2>
+                <p class="section-subtitle">Desde startups hasta empresas</p>
+            </div>
+
+            <div class="pricing-cards">
+                <div class="price-card">
+                    <h3 class="plan-name">Básico</h3>
+                    <div class="plan-price">$499<span>/mes</span></div>
+                    <p class="plan-description">Ideal para empezar</p>
+                    <a href="#precios" class="plan-cta">Ver Detalles</a>
+                </div>
+
+                <div class="price-card popular">
+                    <div class="popular-badge">POPULAR</div>
+                    <h3 class="plan-name">Profesional</h3>
+                    <div class="plan-price">$999<span>/mes</span></div>
+                    <p class="plan-description">Para negocios en crecimiento</p>
+                    <a href="#precios" class="plan-cta">Ver Detalles</a>
+                </div>
+
+                <div class="price-card">
+                    <h3 class="plan-name">Empresarial</h3>
+                    <div class="plan-price">$1,999<span>/mes</span></div>
+                    <p class="plan-description">Para grandes equipos</p>
+                    <a href="#precios" class="plan-cta">Ver Detalles</a>
+                </div>
+            </div>
+
+            <div class="cta-section">
+                <a href="#precios" class="cta-link">Ver comparación completa de planes →</a>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

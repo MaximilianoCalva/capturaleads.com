@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Características - CapturaLeads</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .caracteristicas-wrapper {
+            background: #f8f9fa;
+            padding: 100px 20px;
+        }
+
+        .caracteristicas-container {
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-header {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title {
+            font-size: 48px;
+            font-weight: 700;
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        .section-subtitle {
+            font-size: 20px;
+            color: #666;
+            max-width: 700px;
+            margin: 0 auto;
+            line-height: 1.6;
+        }
+
+        .features-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: 40px;
+            margin-bottom: 60px;
+        }
+
+        .feature-card {
+            background: white;
+            padding: 40px;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.1);
+            transition: all 0.3s ease;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.2);
+        }
+
+        .feature-icon {
+            font-size: 48px;
+            margin-bottom: 20px;
+        }
+
+        .feature-title {
+            font-size: 24px;
+            font-weight: 700;
+            color: #333;
+            margin-bottom: 15px;
+        }
+
+        .feature-description {
+            font-size: 16px;
+            color: #666;
+            line-height: 1.8;
+            margin-bottom: 20px;
+        }
+
+        .feature-list {
+            list-style: none;
+            padding: 0;
+        }
+
+        .feature-list li {
+            padding: 8px 0;
+            color: #555;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .feature-list li::before {
+            content: "✓";
+            color: #667eea;
+            font-weight: 700;
+            font-size: 18px;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .caracteristicas-wrapper {
+                padding: 60px 15px;
+            }
+
+            .section-title {
+                font-size: 36px;
+            }
+
+            .section-subtitle {
+                font-size: 18px;
+            }
+
+            .features-grid {
+                grid-template-columns: 1fr;
+                gap: 30px;
+            }
+
+            .feature-card {
+                padding: 30px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <section class="caracteristicas-wrapper" id="caracteristicas">
+        <div class="caracteristicas-container">
+            <div class="section-header">
+                <h2 class="section-title">Características</h2>
+                <p class="section-subtitle">
+                    Todo lo que necesitas para capturar, gestionar y convertir tus leads de manera profesional
+                </p>
+            </div>
+
+            <div class="features-grid">
+                <!-- Feature 1 -->
+                <div class="feature-card">
+                    <div class="feature-icon">🎯</div>
+                    <h3 class="feature-title">Landing Pages Personalizadas</h3>
+                    <p class="feature-description">
+                        Crea páginas de captura únicas para cada campaña o producto con nuestro sistema flexible.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Diseños responsive optimizados</li>
+                        <li>Formularios personalizables</li>
+                        <li>Links únicos por campaña</li>
+                        <li>Integración de videos e imágenes</li>
+                        <li>Optimización para conversión</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="feature-card">
+                    <div class="feature-icon">📊</div>
+                    <h3 class="feature-title">Dashboard en Tiempo Real</h3>
+                    <p class="feature-description">
+                        Visualiza y gestiona todos tus leads desde un panel intuitivo con métricas en tiempo real.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Analytics detallados</li>
+                        <li>Métricas de conversión</li>
+                        <li>Filtros avanzados</li>
+                        <li>Exportación de datos</li>
+                        <li>Gráficos interactivos</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="feature-card">
+                    <div class="feature-icon">📧</div>
+                    <h3 class="feature-title">Emails Automáticos</h3>
+                    <p class="feature-description">
+                        Envía información automáticamente a cada lead registrado con templates personalizados.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Templates personalizables</li>
+                        <li>Envío automático instantáneo</li>
+                        <li>Seguimiento de apertura</li>
+                        <li>Contenido dinámico</li>
+                        <li>Branding personalizado</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="feature-card">
+                    <div class="feature-icon">🔐</div>
+                    <h3 class="feature-title">Gestión de Datos Segura</h3>
+                    <p class="feature-description">
+                        Base de datos segura y organizada con todas las herramientas de gestión que necesitas.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Almacenamiento seguro</li>
+                        <li>Segmentación inteligente</li>
+                        <li>Historial completo</li>
+                        <li>Búsqueda avanzada</li>
+                        <li>Cumplimiento GDPR</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="feature-card">
+                    <div class="feature-icon">🚀</div>
+                    <h3 class="feature-title">Integración Fácil</h3>
+                    <p class="feature-description">
+                        Conecta CapturaLeads con tus herramientas favoritas mediante nuestra API flexible.
+                    </p>
+                    <ul class="feature-list">
+                        <li>API REST completa</li>
+                        <li>Webhooks configurables</li>
+                        <li>Integraciones nativas</li>
+                        <li>Documentación detallada</li>
+                        <li>Soporte técnico incluido</li>
+                    </ul>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="feature-card">
+                    <div class="feature-icon">📱</div>
+                    <h3 class="feature-title">Multi-dispositivo</h3>
+                    <p class="feature-description">
+                        Accede a tu dashboard desde cualquier dispositivo, en cualquier momento y lugar.
+                    </p>
+                    <ul class="feature-list">
+                        <li>Diseño responsive total</li>
+                        <li>App móvil optimizada</li>
+                        <li>Sincronización en tiempo real</li>
+                        <li>Notificaciones push</li>
+                        <li>Acceso offline</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>
