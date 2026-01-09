@@ -1,0 +1,241 @@
+<!-- HEADER CAPTURALEADS - LOGGED IN (Cliente autenticado) -->
+<div class="capturaleads-header-logged-in">
+    <div class="header-container">
+        <a href="https://capturaleads.com/" class="header-brand">
+            <span class="brand-text">CapturaLeads</span>
+            <span class="brand-subtitle">Panel de Cliente</span>
+        </a>
+
+        <!-- Botones de acción -->
+        <div class="header-actions">
+            <!-- Dashboard -->
+            <a href="https://dashboard.capturaleads.com/" class="btn-action btn-dashboard" title="Ir al Dashboard">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <rect x="3" y="3" width="7" height="7" rx="1" />
+                    <rect x="14" y="3" width="7" height="7" rx="1" />
+                    <rect x="14" y="14" width="7" height="7" rx="1" />
+                    <rect x="3" y="14" width="7" height="7" rx="1" />
+                </svg>
+                <span class="btn-text">Dashboard</span>
+            </a>
+
+            <!-- Mis Leads -->
+            <a href="https://dashboard.capturaleads.com/leads/" class="btn-action btn-leads" title="Ver mis leads">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M23 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                </svg>
+                <span class="btn-text">Mis Leads</span>
+            </a>
+
+            <!-- Ayuda -->
+            <a href="https://wa.me/5213312345678" target="_blank" class="btn-action btn-support"
+                title="Soporte por WhatsApp">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <path
+                        d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z" />
+                </svg>
+                <span class="btn-text">Ayuda</span>
+            </a>
+
+            <!-- Logout -->
+            <a href="https://dashboard.capturaleads.com/logout/" class="btn-action btn-logout" title="Cerrar sesión">
+                <svg class="icon" viewBox="0 0 24 24">
+                    <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4M16 17l5-5-5-5M21 12H9" />
+                </svg>
+                <span class="btn-text">Salir</span>
+            </a>
+        </div>
+    </div>
+</div>
+
+<style>
+    /* Variables de colores CapturaLeads */
+    .capturaleads-header-logged-in {
+        --cl-primary: #667eea;
+        --cl-secondary: #764ba2;
+        --cl-white: #FFFFFF;
+        --cl-light-gray: #F5F5F5;
+        --cl-success: #10b981;
+        --cl-warning: #f59e0b;
+        --cl-danger: #ef4444;
+        --cl-gradient: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    }
+
+    /* Reset básico */
+    .capturaleads-header-logged-in * {
+        box-sizing: border-box;
+    }
+
+    /* Contenedor principal */
+    .capturaleads-header-logged-in {
+        width: 100%;
+        background: var(--cl-white);
+        border-bottom: 1px solid #e8e8ff;
+        box-shadow: 0 2px 8px rgba(102, 126, 234, 0.08);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        padding: 5px 15px;
+        position: relative;
+        z-index: 1000;
+    }
+
+    .capturaleads-header-logged-in .header-container {
+        width: 100%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 15px;
+        min-height: 60px;
+    }
+
+    /* Branding */
+    .capturaleads-header-logged-in .header-brand {
+        display: flex;
+        flex-direction: column;
+        gap: 2px;
+        text-decoration: none;
+        cursor: pointer;
+        flex-shrink: 0;
+    }
+
+    .capturaleads-header-logged-in .brand-text {
+        font-size: 20px;
+        font-weight: 800;
+        letter-spacing: -0.5px;
+        background: var(--cl-gradient);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+    }
+
+    .capturaleads-header-logged-in .brand-subtitle {
+        font-size: 11px;
+        font-weight: 500;
+        color: #666;
+        letter-spacing: 0.3px;
+    }
+
+    /* Acciones del header */
+    .capturaleads-header-logged-in .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 8px;
+        flex-wrap: wrap;
+    }
+
+    /* Botones de acción */
+    .capturaleads-header-logged-in .btn-action {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        padding: 8px 14px;
+        border-radius: 8px;
+        text-decoration: none;
+        font-size: 13px;
+        font-weight: 600;
+        transition: all 0.2s ease;
+        cursor: pointer;
+        white-space: nowrap;
+        border: 1px solid transparent;
+    }
+
+    .capturaleads-header-logged-in .btn-action .icon {
+        width: 18px;
+        height: 18px;
+        stroke: currentColor;
+        fill: none;
+        stroke-width: 2;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        flex-shrink: 0;
+    }
+
+    /* Dashboard Button */
+    .capturaleads-header-logged-in .btn-dashboard {
+        background: var(--cl-gradient);
+        color: var(--cl-white);
+    }
+
+    .capturaleads-header-logged-in .btn-dashboard:hover {
+        transform: translateY(-1px);
+        box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+    }
+
+    /* Leads Button */
+    .capturaleads-header-logged-in .btn-leads {
+        background: #f0f4ff;
+        color: var(--cl-primary);
+        border-color: #e0e8ff;
+    }
+
+    .capturaleads-header-logged-in .btn-leads:hover {
+        background: #e0e8ff;
+        transform: translateY(-1px);
+    }
+
+    /* Support Button */
+    .capturaleads-header-logged-in .btn-support {
+        background: #f0fdf4;
+        color: var(--cl-success);
+        border-color: #dcfce7;
+    }
+
+    .capturaleads-header-logged-in .btn-support:hover {
+        background: #dcfce7;
+        transform: translateY(-1px);
+    }
+
+    /* Logout Button */
+    .capturaleads-header-logged-in .btn-logout {
+        background: #fef2f2;
+        color: var(--cl-danger);
+        border-color: #fee2e2;
+    }
+
+    .capturaleads-header-logged-in .btn-logout:hover {
+        background: #fee2e2;
+        transform: translateY(-1px);
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .capturaleads-header-logged-in .btn-text {
+            display: none;
+        }
+
+        .capturaleads-header-logged-in .btn-action {
+            padding: 10px;
+            min-width: 40px;
+            justify-content: center;
+        }
+
+        .capturaleads-header-logged-in .header-actions {
+            gap: 6px;
+        }
+
+        .capturaleads-header-logged-in .brand-text {
+            font-size: 18px;
+        }
+
+        .capturaleads-header-logged-in .brand-subtitle {
+            font-size: 10px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .capturaleads-header-logged-in {
+            padding: 5px 10px;
+        }
+
+        .capturaleads-header-logged-in .header-container {
+            min-height: 50px;
+        }
+
+        .capturaleads-header-logged-in .brand-text {
+            font-size: 16px;
+        }
+    }
+</style>
