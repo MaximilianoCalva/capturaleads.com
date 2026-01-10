@@ -52,9 +52,9 @@ La landing page de CapturaLeads tiene como objetivo:
 ## 🎨 Diseño y Branding
 
 ### Colores
-- **Primario:** `#667eea` (Azul violeta)
+- **Primario:** `#2966ff` (Azul brillante)
 - **Secundario:** `#764ba2` (Morado)
-- **Gradiente:** `linear-gradient(135deg, #667eea 0%, #764ba2 100%)`
+- **Gradiente:** `linear-gradient(135deg, #2966ff 0%, #764ba2 100%)`
 - **Acento:** `#ffd700` (Dorado)
 
 ### Tipografía
@@ -101,13 +101,24 @@ Todos los componentes están diseñados como **snippets HTML** listos para usar 
 
 ## 🔄 Versión
 
-**v2.0.0** - Enero 2026
-- ✅ Landing page completa con todas las secciones
-- ✅ Header y Footer con navegación actualizada
-- ✅ Hero section con dashboard preview
-- ✅ Secciones de Características (completa y resumen)
-- ✅ Secciones de Precios (completa y resumen)
-- ✅ Secciones de Contacto (completa y resumen)
-- ✅ Header de Dashboard para clientes
+**v2.2.0** - 10 de enero de 2026
+
+### ✨ Nuevas Características
+- Páginas legales: Términos y Condiciones, Política de Privacidad
+- Headers optimizados ultra-compactos (40px altura)
+- Footer con color sólido #2966ff
+
+### 🎨 Mejoras de Diseño
+- Color sólido #2966ff en todos los componentes (sin gradientes)
+- Headers reducidos en 35% de altura
+- Optimización de espacios y padding
+
+### 📦 Componentes Actualizados
+- ✅ Header principal optimizado (40px altura)
+- ✅ Footer con color sólido
+- ✅ Hero section actualizado
+- ✅ Secciones: características, precios, contacto
+- ✅ Páginas legales completas
 - ✅ Diseño 100% responsive
-- ✅ Optimizado para WordPress/Elementor
+- ✅ Compatible WordPress/Elementor
+
