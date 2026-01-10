@@ -28,7 +28,7 @@
 
 ## 💰 Estructura de Precios
 
-### Plan Básico - $499 MXN/mes
+### Plan Básico - $699 MXN/mes
 **Ideal para:** Emprendedores y pequeños negocios
 
 **Incluye:**
@@ -46,7 +46,7 @@
 
 ---
 
-### Plan Profesional - $999 MXN/mes
+### Plan Profesional - $1,499 MXN/mes
 **Ideal para:** Empresas en crecimiento
 
 **Incluye:**
@@ -64,7 +64,7 @@
 
 ---
 
-### Plan Empresarial - $1,499 MXN/mes
+### Plan Empresarial - $2,999 MXN/mes
 **Ideal para:** Empresas consolidadas
 
 **Incluye:**

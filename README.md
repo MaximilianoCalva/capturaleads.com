@@ -95,9 +95,9 @@ Las empresas invierten grandes presupuestos en **Meta Ads** (Facebook/Instagram)
 
 | Plan | Landing Pages | Características | Precio Mensual |
 |------|---------------|-----------------|----------------|
-| **Básico** | 1 Landing Page | • Formulario optimizado<br>• Gestión en Workspace<br>• Almacenamiento de leads<br>• Email automático<br>• Exportación de datos | $499 MXN |
-| **Profesional** | 3 Landing Pages | • Todo lo del plan Básico<br>• Gestión multiformulario<br>• Estadísticas avanzadas<br>• Soporte prioritario<br>• Integraciones | $999 MXN |
-| **Empresarial** | 5 Landing Pages | • Todo lo del plan Profesional<br>• Capacidad máxima de gestión<br>• Automatización avanzada<br>• API personalizada<br>• Soporte dedicado | $1,499 MXN |
+| **Básico** | 1 Landing Page | • Formulario optimizado<br>• Gestión en Workspace<br>• Almacenamiento de leads<br>• Email automático<br>• Exportación de datos | $699 MXN |
+| **Profesional** | 3 Landing Pages | • Todo lo del plan Básico<br>• Gestión multiformulario<br>• Estadísticas avanzadas<br>• Soporte prioritario<br>• Integraciones | $2,999 MXN |
+| **Empresarial** | 5 Landing Pages | • Todo lo del plan Profesional<br>• Capacidad máxima de gestión<br>• Automatización avanzada<br>• API personalizada<br>• Soporte dedicado | $2,999 MXN |
 
 ### 🎁 Incluido en Todos los Planes
 - ✅ Workspace completo para gestión

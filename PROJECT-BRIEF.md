@@ -148,9 +148,9 @@ Plan Profesional:
 
 | Plan | Landing Pages | Funcionalidades Clave | Precio |
 |------|---------------|------------------------|--------|
-| **Básico** | 1 Servicio | • Formulario optimizado<br>• Workspace básico<br>• Almacenamiento ilimitado<br>• Email auto-responder<br>• Exportación de datos | $499 MXN/mes |
-| **Profesional** | 3 Servicios | • Todo lo anterior<br>• Multi-gestión en Workspace (3 islas)<br>• Creative Studio básico<br>• 5 solicitudes diseño/mes<br>• 2 videos editados/mes | $999 MXN/mes |
-| **Empresarial** | 5 Servicios | • Todo lo anterior<br>• Capacidad máxima de gestión (5 islas)<br>• Creative Studio ilimitado<br>• Diseños ilimitados<br>• 5 videos editados/mes<br>• Soporte dedicado 24/7 | $1,499 MXN/mes |
+| **Básico** | 1 Servicio | • Formulario optimizado<br>• Workspace básico<br>• Almacenamiento ilimitado<br>• Email auto-responder<br>• Exportación de datos | $699 MXN/mes |
+| **Profesional** | 3 Servicios | • Todo lo anterior<br>• Multi-gestión en Workspace (3 islas)<br>• Creative Studio básico<br>• 5 solicitudes diseño/mes<br>• 2 videos editados/mes | $2,999 MXN/mes |
+| **Empresarial** | 5 Servicios | • Todo lo anterior<br>• Capacidad máxima de gestión (5 islas)<br>• Creative Studio ilimitado<br>• Diseños ilimitados<br>• 5 videos editados/mes<br>• Soporte dedicado 24/7 | $2,999 MXN/mes |
 
 ### Consideraciones de Implementación
 
@@ -431,7 +431,7 @@ Plan Profesional:
 | ❌ Configuración compleja (semanas) | ✅ Listo en 7 días |
 | ❌ Requiere desarrollador | ✅ Todo incluido, sin código |
 | ❌ Empieza vacío | ✅ Landing page + formulario incluidos |
-| ❌ $100+ USD/mes | ✅ Desde $499 MXN/mes (~$28 USD) |
+| ❌ $100+ USD/mes | ✅ Desde $699 MXN/mes (~$39 USD) |
 
 ---
 

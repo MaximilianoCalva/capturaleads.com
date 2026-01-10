@@ -110,7 +110,7 @@ Sabrás quién ya fue contactado y quién está listo para cerrar, permitiéndot
 
 | Lo que Inviertes | Lo que Obtienes |
 |------------------|-----------------|
-| $499 - $1,499/mes | • Ahorro de 20+ horas/mes en gestión manual |
+| $699 - $2,999/mes | • Ahorro de 20+ horas/mes en gestión manual |
 | | • Aumento del 300% en captura de leads |
 | | • ROI medible de tu inversión publicitaria |
 | | • Base de datos valorada en $10,000+ |
@@ -157,7 +157,7 @@ Sabrás quién ya fue contactado y quién está listo para cerrar, permitiéndot
 ## 💰 Inversión vs. Retorno
 
 ### Inversión Mensual
-**Plan Básico:** $499 MXN/mes
+**Plan Básico:** $699 MXN/mes
 
 ### Retorno Esperado
 - **Ahorro en tiempo:** 20 horas/mes × $200/hora = $4,000 MXN
