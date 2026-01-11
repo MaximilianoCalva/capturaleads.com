@@ -1,199 +1,164 @@
-<!DOCTYPE html>
-<html lang="es">
+<!-- RESUMEN DE CONTACTO - INDEX -->
+<section class="contacto-resumen-index" id="contacto-resumen">
+    <div class="contacto-resumen-container">
+        <div class="section-header">
+            <h2 class="section-title">¿Listo para Transformar tu Negocio?</h2>
+            <p class="section-subtitle">Contáctanos y descubre cómo CapturaLeads puede ayudarte</p>
+        </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto Resumen - CapturaLeads</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        <div class="contacto-info-grid">
+            <div class="info-card">
+                <div class="info-icon">📧</div>
+                <h3>Email</h3>
+                <a href="mailto:contacto@capturaleads.com">contacto@capturaleads.com</a>
+            </div>
+
+            <div class="info-card">
+                <div class="info-icon">⏰</div>
+                <h3>Horario</h3>
+                <p>Lun - Vie: 9am - 6pm</p>
+            </div>
+
+            <div class="info-card">
+                <div class="info-icon">📍</div>
+                <h3>Ubicación</h3>
+                <p>Guadalajara, Jalisco</p>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <a href="https://capturaleads.com/contacto/" class="cta-button">Ver Más Información</a>
+        </div>
+    </div>
+</section>
+
+<style>
+    .contacto-resumen-index * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .contacto-resumen-index {
+        padding: 80px 20px;
+        background: linear-gradient(135deg, #f8f9ff 0%, #fff 100%);
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .contacto-resumen-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .section-header {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .section-title {
+        font-size: 42px;
+        font-weight: 800;
+        color: #2966ff;
+        margin-bottom: 12px;
+    }
+
+    .section-subtitle {
+        font-size: 18px;
+        color: #666;
+    }
+
+    .contacto-info-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin-bottom: 40px;
+    }
+
+    .info-card {
+        background: white;
+        border-radius: 16px;
+        padding: 35px 25px;
+        text-align: center;
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+    }
+
+    .info-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 40px rgba(41, 102, 255, 0.12);
+        border-color: #2966ff;
+    }
+
+    .info-icon {
+        font-size: 48px;
+        margin-bottom: 15px;
+    }
+
+    .info-card h3 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .info-card p,
+    .info-card a {
+        font-size: 15px;
+        color: #666;
+        text-decoration: none;
+    }
+
+    .info-card a {
+        color: #2966ff;
+        font-weight: 600;
+    }
+
+    .info-card a:hover {
+        text-decoration: underline;
+    }
+
+    .cta-section {
+        text-align: center;
+    }
+
+    .cta-button {
+        display: inline-block;
+        background: #2966ff;
+        color: white;
+        padding: 15px 40px;
+        border-radius: 50px;
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .cta-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(41, 102, 255, 0.3);
+    }
+
+    /* Responsive */
+    @media (max-width: 968px) {
+        .contacto-info-grid {
+            grid-template-columns: 1fr;
+            gap: 20px;
         }
+    }
 
-        .contacto-resumen-wrapper {
-            background: #2966ff;
-            padding: 80px 20px;
-            color: white;
-        }
-
-        .contacto-container {
-            max-width: 900px;
-            margin: 0 auto;
-            text-align: center;
+    @media (max-width: 768px) {
+        .contacto-resumen-index {
+            padding: 60px 15px;
         }
 
         .section-title {
-            font-size: 42px;
-            font-weight: 700;
-            margin-bottom: 20px;
+            font-size: 32px;
         }
+    }
 
-        .section-subtitle {
-            font-size: 20px;
-            margin-bottom: 40px;
-            opacity: 0.9;
+    @media (max-width: 576px) {
+        .section-title {
+            font-size: 28px;
         }
-
-        .contact-methods {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 30px;
-            margin-bottom: 40px;
-        }
-
-        .contact-method {
-            background: rgba(255, 255, 255, 0.15);
-            padding: 30px 20px;
-            border-radius: 15px;
-            backdrop-filter: blur(10px);
-            transition: all 0.3s ease;
-        }
-
-        .contact-method:hover {
-            background: rgba(255, 255, 255, 0.25);
-            transform: translateY(-5px);
-        }
-
-        .method-icon {
-            font-size: 48px;
-            margin-bottom: 15px;
-        }
-
-        .method-title {
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        .method-info {
-            font-size: 15px;
-            opacity: 0.9;
-        }
-
-        .cta-buttons {
-            display: flex;
-            justify-content: center;
-            gap: 20px;
-            flex-wrap: wrap;
-        }
-
-        .cta-button {
-            background: white;
-            color: #2966ff;
-            padding: 18px 40px;
-            border-radius: 50px;
-            font-size: 18px;
-            font-weight: 700;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
-        }
-
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 35px rgba(255, 255, 255, 0.4);
-        }
-
-        .cta-button.secondary {
-            background: rgba(255, 255, 255, 0.2);
-            color: white;
-            border: 2px solid white;
-        }
-
-        .cta-button.secondary:hover {
-            background: rgba(255, 255, 255, 0.3);
-        }
-
-        /* Responsive */
-        @media (max-width: 968px) {
-            .contact-methods {
-                max-width: 600px;
-                margin-left: auto;
-                margin-right: auto;
-                margin-bottom: 40px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .contacto-resumen-wrapper {
-                padding: 70px 20px;
-            }
-
-            .section-title {
-                font-size: 36px;
-            }
-
-            .section-subtitle {
-                font-size: 18px;
-            }
-
-            .contact-methods {
-                grid-template-columns: 1fr;
-                gap: 20px;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .contacto-resumen-wrapper {
-                padding: 60px 15px;
-            }
-
-            .section-title {
-                font-size: 28px;
-            }
-
-            .section-subtitle {
-                font-size: 17px;
-            }
-
-            .contact-method {
-                padding: 25px 20px;
-            }
-
-            .method-icon {
-                font-size: 40px;
-            }
-
-            .cta-buttons {
-                flex-direction: column;
-                gap: 15px;
-            }
-
-            .cta-button {
-                width: 100%;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <section class="contacto-resumen-wrapper">
-        <div class="contacto-container">
-            <h2 class="section-title">¿Listo para Comenzar?</h2>
-            <p class="section-subtitle">Contáctanos y descubre cómo CapturaLeads puede transformar tu negocio</p>
-
-            <div class="contact-methods">
-                <div class="contact-method">
-                    <div class="method-icon">📧</div>
-                    <h3 class="method-title">Email</h3>
-                    <p class="method-info">contacto@capturaleads.com</p>
-                </div>
-
-                <div class="contact-method">
-                    <div class="method-icon">💬</div>
-                    <h3 class="method-title">Chat en Vivo</h3>
-                    <p class="method-info">Disponible en horario laboral</p>
-                </div>
-            </div>
-
-            <div class="cta-buttons">
-                <a href="https://capturaleads.com/contacto/" class="cta-button">🚀 Solicitar Demo Gratis</a>
-                <a href="https://capturaleads.com/contacto/" class="cta-button secondary">Ver Más Opciones</a>
-            </div>
-        </div>
-    </section>
-</body>
-
-</html>
+    }
+</style>
