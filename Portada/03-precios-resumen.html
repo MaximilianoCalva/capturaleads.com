@@ -1,107 +1,150 @@
 <!-- RESUMEN DE PRECIOS - INDEX -->
-<section class="precios-resumen-index" id="precios-resumen">
-    <div class="precios-resumen-container">
+<section class="precios-resumen-premium">
+    <div class="section-container">
         <div class="section-header">
-            <h2 class="section-title">Planes que se Adaptan a tu Negocio</h2>
+            <div class="header-badge">
+                <span class="badge-icon">💎</span>
+                <span>Planes y Precios</span>
+            </div>
+            <h2 class="section-title">
+                Planes que se Adaptan a
+                <span class="gradient-text">tu Negocio</span>
+            </h2>
             <p class="section-subtitle">Desde emprendedores hasta empresas consolidadas</p>
         </div>
 
-        <div class="pricing-cards">
+        <div class="pricing-grid">
             <!-- Plan Básico -->
             <div class="pricing-card">
+                <div class="card-glow"></div>
                 <div class="plan-badge">Para Empezar</div>
                 <h3 class="plan-name">Básico</h3>
                 <div class="plan-price">
                     <span class="currency">$</span>699
                     <span class="period">/mes</span>
                 </div>
-                <ul class="plan-highlights">
-                    <li>Página de aterrizaje</li>
+                <ul class="plan-features">
+                    <li>1 Página de aterrizaje</li>
                     <li>500 leads/mes</li>
-                    <li>Workspace básico</li>
-                    <li>Email automático</li>
+                    <li>1 usuario</li>
+                    <li>Soporte por email</li>
                 </ul>
-                <a href="#precios" class="plan-cta">Ver Detalles</a>
+                <a href="https://capturaleads.com/precios/" class="plan-btn">Ver Detalles</a>
             </div>
 
             <!-- Plan Profesional -->
             <div class="pricing-card featured">
+                <div class="card-glow"></div>
                 <div class="plan-badge popular">Más Popular</div>
                 <h3 class="plan-name">Profesional</h3>
                 <div class="plan-price">
                     <span class="currency">$</span>2,999
                     <span class="period">/mes</span>
                 </div>
-                <ul class="plan-highlights">
-                    <li>5 páginas de aterrizaje</li>
+                <ul class="plan-features">
+                    <li>5 Páginas de aterrizaje</li>
                     <li>2,000 leads/mes</li>
-                    <li>Workspace multi-servicio</li>
+                    <li>2 usuarios</li>
                     <li>Soporte prioritario</li>
                 </ul>
-                <a href="#precios" class="plan-cta">Ver Detalles</a>
+                <a href="https://capturaleads.com/precios/" class="plan-btn">Ver Detalles</a>
             </div>
 
             <!-- Plan Empresarial -->
             <div class="pricing-card">
+                <div class="card-glow"></div>
                 <div class="plan-badge">Premium</div>
                 <h3 class="plan-name">Empresarial</h3>
                 <div class="plan-price">
                     <span class="currency">$</span>4,999
                     <span class="period">/mes</span>
                 </div>
-                <ul class="plan-highlights">
-                    <li>10 páginas de aterrizaje</li>
+                <ul class="plan-features">
+                    <li>10 Páginas de aterrizaje</li>
                     <li>Leads ilimitados</li>
-                    <li>Workspace premium</li>
-                    <li>Hasta 3 usuarios</li>
+                    <li>3 usuarios</li>
+                    <li>Soporte prioritario</li>
                 </ul>
-                <a href="#precios" class="plan-cta">Contactar</a>
+                <a href="https://capturaleads.com/precios/" class="plan-btn">Contactar</a>
             </div>
         </div>
 
-        <div class="pricing-footer">
-            <p class="pricing-note">🎨 Servicios adicionales disponibles: Diseño, Videos, Automatización, Consultoría
-            </p>
+        <div class="pricing-note">
+            <p>🎨 Servicios adicionales disponibles: Diseño, Videos, Automatización, Consultoría</p>
         </div>
+    </div>
+
+    <div class="section-bg">
+        <div class="bg-gradient"></div>
     </div>
 </section>
 
 <style>
-    .precios-resumen-index * {
+    .precios-resumen-premium * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
 
-    .precios-resumen-index {
-        padding: 80px 20px;
-        background: white;
+    .precios-resumen-premium {
+        position: relative;
+        padding: 100px 20px;
+        background: #0a0e27;
+        overflow: hidden;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     }
 
-    .precios-resumen-container {
+    .section-container {
         max-width: 1200px;
         margin: 0 auto;
+        position: relative;
+        z-index: 10;
     }
 
     .section-header {
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 60px;
+    }
+
+    .header-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(41, 102, 255, 0.1);
+        border: 1px solid rgba(41, 102, 255, 0.3);
+        padding: 8px 20px;
+        border-radius: 50px;
+        margin-bottom: 20px;
+        color: #2966ff;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .badge-icon {
+        font-size: 16px;
     }
 
     .section-title {
-        font-size: 42px;
-        font-weight: 800;
-        color: #2966ff;
-        margin-bottom: 12px;
+        font-size: 48px;
+        font-weight: 900;
+        color: white;
+        margin-bottom: 15px;
+        line-height: 1.2;
+    }
+
+    .gradient-text {
+        background: linear-gradient(135deg, #2966ff 0%, #00d4ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
     }
 
     .section-subtitle {
         font-size: 18px;
-        color: #666;
+        color: rgba(255, 255, 255, 0.7);
     }
 
-    .pricing-cards {
+    .pricing-grid {
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
@@ -109,159 +152,176 @@
     }
 
     .pricing-card {
-        background: #f8f9ff;
-        border-radius: 16px;
-        padding: 35px 25px;
-        text-align: center;
-        transition: all 0.3s ease;
         position: relative;
-        border: 2px solid transparent;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 24px;
+        padding: 40px 30px;
+        text-align: center;
+        transition: all 0.4s ease;
+        overflow: hidden;
     }
 
     .pricing-card:hover {
-        transform: translateY(-8px);
-        box-shadow: 0 12px 40px rgba(41, 102, 255, 0.15);
-        border-color: #2966ff;
+        transform: translateY(-10px);
+        border-color: rgba(41, 102, 255, 0.5);
     }
 
     .pricing-card.featured {
-        background: #2966ff;
-        color: white;
+        border-color: rgba(41, 102, 255, 0.6);
+        background: rgba(41, 102, 255, 0.15);
         transform: scale(1.05);
     }
 
     .pricing-card.featured:hover {
-        transform: scale(1.05) translateY(-8px);
+        transform: scale(1.05) translateY(-10px);
+    }
+
+    .card-glow {
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(41, 102, 255, 0.2) 0%, transparent 70%);
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+
+    .pricing-card:hover .card-glow {
+        opacity: 1;
     }
 
     .plan-badge {
         display: inline-block;
         padding: 6px 16px;
-        background: #e8edff;
-        color: #2966ff;
+        background: rgba(255, 255, 255, 0.1);
+        color: rgba(255, 255, 255, 0.8);
         border-radius: 20px;
         font-size: 12px;
         font-weight: 700;
         text-transform: uppercase;
-        margin-bottom: 15px;
+        margin-bottom: 20px;
+        border: 1px solid rgba(255, 255, 255, 0.2);
     }
 
     .plan-badge.popular {
-        background: white;
-        color: #2966ff;
-    }
-
-    .pricing-card.featured .plan-badge {
-        background: white;
-        color: #2966ff;
+        background: linear-gradient(135deg, #2966ff 0%, #1a4fd8 100%);
+        color: white;
+        border-color: transparent;
     }
 
     .plan-name {
-        font-size: 24px;
+        font-size: 28px;
         font-weight: 700;
-        color: #333;
+        color: white;
         margin-bottom: 20px;
     }
 
-    .pricing-card.featured .plan-name {
-        color: white;
-    }
-
     .plan-price {
-        font-size: 48px;
-        font-weight: 800;
-        color: #2966ff;
-        margin-bottom: 25px;
+        font-size: 52px;
+        font-weight: 900;
+        background: linear-gradient(135deg, #2966ff 0%, #00d4ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 30px;
         line-height: 1;
     }
 
-    .pricing-card.featured .plan-price {
-        color: white;
-    }
-
-    .plan-price .currency {
-        font-size: 24px;
+    .currency {
+        font-size: 28px;
         vertical-align: super;
     }
 
-    .plan-price .period {
+    .period {
         font-size: 18px;
+        color: rgba(255, 255, 255, 0.6);
         font-weight: 400;
-        color: #666;
     }
 
-    .pricing-card.featured .plan-price .period {
-        color: rgba(255, 255, 255, 0.8);
-    }
-
-    .plan-highlights {
+    .plan-features {
         list-style: none;
         padding: 0;
         margin-bottom: 30px;
         text-align: left;
     }
 
-    .plan-highlights li {
-        padding: 10px 0;
-        color: #555;
-        font-size: 14px;
+    .plan-features li {
+        padding: 12px 0;
+        color: rgba(255, 255, 255, 0.8);
+        font-size: 15px;
         display: flex;
         align-items: center;
-        gap: 8px;
+        gap: 10px;
     }
 
-    .pricing-card.featured .plan-highlights li {
-        color: white;
-    }
-
-    .plan-highlights li::before {
+    .plan-features li::before {
         content: "✓";
         color: #2966ff;
         font-weight: 700;
-        font-size: 16px;
-        flex-shrink: 0;
+        font-size: 18px;
     }
 
-    .pricing-card.featured .plan-highlights li::before {
-        color: white;
-    }
-
-    .plan-cta {
+    .plan-btn {
         display: block;
-        background: #2966ff;
+        background: rgba(255, 255, 255, 0.1);
         color: white;
-        padding: 12px 30px;
+        padding: 14px 30px;
         border-radius: 50px;
         font-size: 15px;
         font-weight: 700;
         text-decoration: none;
         transition: all 0.3s ease;
+        border: 1px solid rgba(255, 255, 255, 0.2);
     }
 
-    .pricing-card.featured .plan-cta {
-        background: white;
-        color: #2966ff;
+    .pricing-card.featured .plan-btn {
+        background: linear-gradient(135deg, #2966ff 0%, #1a4fd8 100%);
+        border-color: transparent;
     }
 
-    .plan-cta:hover {
+    .plan-btn:hover {
         transform: translateY(-2px);
-        box-shadow: 0 6px 20px rgba(41, 102, 255, 0.3);
+        background: rgba(255, 255, 255, 0.15);
     }
 
-    .pricing-footer {
+    .pricing-card.featured .plan-btn:hover {
+        background: linear-gradient(135deg, #1a4fd8 0%, #2966ff 100%);
+    }
+
+    .pricing-note {
         text-align: center;
         margin-top: 40px;
     }
 
-    .pricing-note {
+    .pricing-note p {
+        color: rgba(255, 255, 255, 0.6);
         font-size: 15px;
-        color: #666;
-        margin: 8px 0;
+    }
+
+    .section-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .bg-gradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle at 50% 50%, rgba(41, 102, 255, 0.1) 0%, transparent 50%);
     }
 
     /* Responsive */
     @media (max-width: 968px) {
-        .pricing-cards {
+        .pricing-grid {
             grid-template-columns: 1fr;
             gap: 25px;
         }
@@ -271,13 +331,17 @@
         }
 
         .pricing-card.featured:hover {
-            transform: translateY(-8px);
+            transform: translateY(-10px);
+        }
+
+        .section-title {
+            font-size: 40px;
         }
     }
 
     @media (max-width: 768px) {
-        .precios-resumen-index {
-            padding: 60px 15px;
+        .precios-resumen-premium {
+            padding: 70px 15px;
         }
 
         .section-title {
@@ -285,21 +349,17 @@
         }
 
         .plan-price {
-            font-size: 40px;
+            font-size: 44px;
         }
     }
 
-    @media (max-width: 480px) {
+    @media (max-width: 576px) {
         .section-title {
             font-size: 28px;
         }
 
         .plan-price {
-            font-size: 36px;
-        }
-
-        .pricing-note {
-            font-size: 13px;
+            font-size: 40px;
         }
     }
 </style>
