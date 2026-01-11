@@ -1,218 +1,177 @@
-<!DOCTYPE html>
-<html lang="es">
+<!-- RESUMEN DE CARACTERÍSTICAS - INDEX -->
+<section class="caracteristicas-resumen-index" id="caracteristicas-resumen">
+    <div class="caracteristicas-resumen-container">
+        <div class="section-header">
+            <h2 class="section-title">La Solución Completa para tus Leads</h2>
+            <p class="section-subtitle">Todo lo que necesitas en una sola plataforma</p>
+        </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Características Resumen - CapturaLeads</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+        <div class="features-showcase">
+            <div class="feature-item">
+                <div class="feature-icon">🎯</div>
+                <h3 class="feature-name">Landing Pages</h3>
+                <p class="feature-desc">Páginas optimizadas para conversión desde tus anuncios</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">📊</div>
+                <h3 class="feature-name">Workspace</h3>
+                <p class="feature-desc">Gestiona todos tus leads organizados por servicio</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">⚡</div>
+                <h3 class="feature-name">Automatización</h3>
+                <p class="feature-desc">Emails automáticos y funnel de ventas instantáneo</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">🎨</div>
+                <h3 class="feature-name">Creative Studio</h3>
+                <p class="feature-desc">Diseños y videos para tus campañas publicitarias</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">🔗</div>
+                <h3 class="feature-name">Integraciones</h3>
+                <p class="feature-desc">Meta Pixel, Google Analytics y más</p>
+            </div>
+
+            <div class="feature-item">
+                <div class="feature-icon">📈</div>
+                <h3 class="feature-name">Analytics</h3>
+                <p class="feature-desc">Métricas en tiempo real y reportes detallados</p>
+            </div>
+        </div>
+
+        <div class="cta-section">
+            <a href="#caracteristicas" class="cta-button">Ver Todas las Características</a>
+        </div>
+    </div>
+</section>
+
+<style>
+    .caracteristicas-resumen-index * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .caracteristicas-resumen-index {
+        padding: 80px 20px;
+        background: #f8f9ff;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .caracteristicas-resumen-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .section-header {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .section-title {
+        font-size: 42px;
+        font-weight: 800;
+        color: #2966ff;
+        margin-bottom: 12px;
+    }
+
+    .section-subtitle {
+        font-size: 18px;
+        color: #666;
+    }
+
+    .features-showcase {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin-bottom: 50px;
+    }
+
+    .feature-item {
+        background: white;
+        border-radius: 16px;
+        padding: 30px;
+        text-align: center;
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+    }
+
+    .feature-item:hover {
+        transform: translateY(-8px);
+        box-shadow: 0 12px 40px rgba(41, 102, 255, 0.12);
+        border-color: #2966ff;
+    }
+
+    .feature-icon {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    .feature-name {
+        font-size: 20px;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .feature-desc {
+        font-size: 14px;
+        color: #666;
+        line-height: 1.5;
+    }
+
+    .cta-section {
+        text-align: center;
+    }
+
+    .cta-button {
+        display: inline-block;
+        background: #2966ff;
+        color: white;
+        padding: 15px 40px;
+        border-radius: 50px;
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .cta-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 25px rgba(41, 102, 255, 0.3);
+    }
+
+    /* Responsive */
+    @media (max-width: 968px) {
+        .features-showcase {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
         }
+    }
 
-        .caracteristicas-resumen-wrapper {
-            background: white;
-            padding: 80px 20px;
-        }
-
-        .caracteristicas-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 50px;
+    @media (max-width: 768px) {
+        .caracteristicas-resumen-index {
+            padding: 60px 15px;
         }
 
         .section-title {
-            font-size: 42px;
-            font-weight: 700;
-            color: #2966ff;
-            margin-bottom: 15px;
+            font-size: 32px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .features-showcase {
+            grid-template-columns: 1fr;
+            gap: 20px;
         }
 
-        .section-subtitle {
-            font-size: 18px;
-            color: #666;
+        .section-title {
+            font-size: 28px;
         }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-        }
-
-        .feature-item {
-            text-align: center;
-            padding: 30px 20px;
-        }
-
-        .feature-icon {
-            font-size: 56px;
-            margin-bottom: 20px;
-        }
-
-        .feature-title {
-            font-size: 20px;
-            font-weight: 700;
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .feature-description {
-            font-size: 15px;
-            color: #666;
-            line-height: 1.6;
-        }
-
-        .cta-section {
-            text-align: center;
-            margin-top: 50px;
-        }
-
-        .cta-button {
-            display: inline-block;
-            background: #2966ff;
-            color: white;
-            padding: 18px 40px;
-            border-radius: 50px;
-            font-size: 18px;
-            font-weight: 700;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            box-shadow: 0 8px 25px rgba(102, 126, 234, 0.3);
-        }
-
-        .cta-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 35px rgba(102, 126, 234, 0.4);
-        }
-
-        /* Responsive */
-        @media (max-width: 968px) {
-            .features-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .section-title {
-                font-size: 36px;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .caracteristicas-resumen-wrapper {
-                padding: 70px 20px;
-            }
-
-            .section-title {
-                font-size: 34px;
-            }
-
-            .section-subtitle {
-                font-size: 17px;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .caracteristicas-resumen-wrapper {
-                padding: 60px 15px;
-            }
-
-            .section-title {
-                font-size: 28px;
-            }
-
-            .section-subtitle {
-                font-size: 16px;
-            }
-
-            .features-grid {
-                grid-template-columns: 1fr;
-                gap: 35px;
-            }
-
-            .feature-item {
-                padding: 20px;
-            }
-
-            .feature-icon {
-                font-size: 48px;
-            }
-
-            .cta-button {
-                width: 100%;
-                max-width: 400px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <section class="caracteristicas-resumen-wrapper">
-        <div class="caracteristicas-container">
-            <div class="section-header">
-                <h2 class="section-title">¿Por qué CapturaLeads?</h2>
-                <p class="section-subtitle">La solución completa para tu gestión de leads</p>
-            </div>
-
-            <div class="features-grid">
-                <div class="feature-item">
-                    <div class="feature-icon">🎯</div>
-                    <h3 class="feature-title">Landing Pages</h3>
-                    <p class="feature-description">
-                        Crea páginas personalizadas con formularios optimizados para conversión
-                    </p>
-                </div>
-
-                <div class="feature-item">
-                    <div class="feature-icon">📊</div>
-                    <h3 class="feature-title">Dashboard</h3>
-                    <p class="feature-description">
-                        Visualiza métricas en tiempo real y gestiona todos tus leads
-                    </p>
-                </div>
-
-                <div class="feature-item">
-                    <div class="feature-icon">📧</div>
-                    <h3 class="feature-title">Emails Automáticos</h3>
-                    <p class="feature-description">
-                        Envía información instantánea a cada lead registrado
-                    </p>
-                </div>
-
-                <div class="feature-item">
-                    <div class="feature-icon">🔐</div>
-                    <h3 class="feature-title">Datos Seguros</h3>
-                    <p class="feature-description">
-                        Base de datos protegida con segmentación inteligente
-                    </p>
-                </div>
-
-                <div class="feature-item">
-                    <div class="feature-icon">⚡</div>
-                    <h3 class="feature-title">Rendimiento</h3>
-                    <p class="feature-description">
-                        Plataforma rápida y confiable con 99.9% de uptime
-                    </p>
-                </div>
-
-                <div class="feature-item">
-                    <div class="feature-icon">📱</div>
-                    <h3 class="feature-title">Multi-dispositivo</h3>
-                    <p class="feature-description">
-                        Accede desde cualquier lugar y dispositivo
-                    </p>
-                </div>
-            </div>
-
-            <div class="cta-section">
-                <a href="https://capturaleads.com/caracteristicas/" class="cta-button">Ver Todas las Características</a>
-            </div>
-        </div>
-    </section>
-</body>
-
-</html>
+    }
+</style>

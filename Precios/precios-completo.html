@@ -1,318 +1,365 @@
-<!DOCTYPE html>
-<html lang="es">
+<!-- SECCIÓN DE PRECIOS - CAPTURALEADS -->
+<section class="precios-capturaleads" id="precios">
+    <div class="precios-container">
+        <div class="section-header">
+            <h2 class="section-title">Planes y Precios</h2>
+            <p class="section-subtitle">Elige el plan perfecto para tu negocio</p>
+        </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Precios - CapturaLeads</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        .precios-wrapper {
-            background: #2966ff;
-            padding: 100px 20px;
-            color: white;
-        }
-
-        .precios-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .section-title {
-            font-size: 48px;
-            font-weight: 700;
-            margin-bottom: 20px;
-        }
-
-        .section-subtitle {
-            font-size: 20px;
-            opacity: 0.9;
-        }
-
-        .pricing-grid {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 30px;
-            margin-bottom: 50px;
-        }
-
-        .pricing-card {
-            background: white;
-            color: #333;
-            border-radius: 20px;
-            padding: 40px;
-            text-align: center;
-            transition: all 0.3s ease;
-            position: relative;
-        }
-
-        .pricing-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-        }
-
-        .pricing-card.featured {
-            border: 3px solid #ffd700;
-            transform: scale(1.05);
-        }
-
-        .pricing-card.featured::before {
-            content: "MÁS POPULAR";
-            position: absolute;
-            top: -15px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: #ffd700;
-            color: #333;
-            padding: 8px 25px;
-            border-radius: 50px;
-            font-size: 12px;
-            font-weight: 700;
-        }
-
-        .plan-name {
-            font-size: 24px;
-            font-weight: 700;
-            color: #2966ff;
-            margin-bottom: 15px;
-        }
-
-        .plan-price {
-            font-size: 48px;
-            font-weight: 700;
-            color: #333;
-            margin-bottom: 10px;
-        }
-
-        .plan-price span {
-            font-size: 20px;
-            color: #666;
-        }
-
-        .plan-period {
-            font-size: 16px;
-            color: #999;
-            margin-bottom: 30px;
-        }
-
-        .plan-features {
-            list-style: none;
-            padding: 0;
-            margin-bottom: 30px;
-            text-align: left;
-        }
-
-        .plan-features li {
-            padding: 12px 0;
-            color: #555;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            border-bottom: 1px solid #f0f0f0;
-        }
-
-        .plan-features li:last-child {
-            border-bottom: none;
-        }
-
-        .plan-features li::before {
-            content: "✓";
-            color: #2966ff;
-            font-weight: 700;
-            font-size: 18px;
-        }
-
-        .plan-button {
-            display: block;
-            background: #2966ff;
-            color: white;
-            padding: 15px 30px;
-            border-radius: 50px;
-            font-size: 16px;
-            font-weight: 700;
-            text-decoration: none;
-            transition: all 0.3s ease;
-        }
-
-        .plan-button:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 8px 20px rgba(102, 126, 234, 0.4);
-        }
-
-        .faq-section {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 20px;
-            padding: 40px;
-            margin-top: 60px;
-        }
-
-        .faq-title {
-            font-size: 32px;
-            font-weight: 700;
-            text-align: center;
-            margin-bottom: 30px;
-        }
-
-        .faq-item {
-            background: rgba(255, 255, 255, 0.1);
-            padding: 20px;
-            border-radius: 10px;
-            margin-bottom: 15px;
-        }
-
-        .faq-question {
-            font-size: 18px;
-            font-weight: 700;
-            margin-bottom: 10px;
-        }
-
-        .faq-answer {
-            font-size: 16px;
-            opacity: 0.9;
-            line-height: 1.6;
-        }
-
-        /* Responsive */
-        @media (max-width: 968px) {
-            .pricing-grid {
-                grid-template-columns: 1fr;
-                gap: 40px;
-            }
-
-            .pricing-card.featured {
-                transform: scale(1);
-            }
-        }
-
-        @media (max-width: 576px) {
-            .precios-wrapper {
-                padding: 60px 15px;
-            }
-
-            .section-title {
-                font-size: 36px;
-            }
-
-            .plan-price {
-                font-size: 40px;
-            }
-
-            .faq-section {
-                padding: 30px 20px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <section class="precios-wrapper" id="precios">
-        <div class="precios-container">
-            <div class="section-header">
-                <h2 class="section-title">Planes y Precios</h2>
-                <p class="section-subtitle">Elige el plan perfecto para tu negocio</p>
+        <div class="pricing-grid">
+            <!-- Plan Básico -->
+            <div class="pricing-card">
+                <h3 class="plan-name">Básico</h3>
+                <div class="plan-price">$699<span>/mes</span></div>
+                <p class="plan-period">Ideal para emprendedores</p>
+                <ul class="plan-features">
+                    <li>1 Landing Page personalizada</li>
+                    <li>Formulario optimizado</li>
+                    <li>Workspace de gestión</li>
+                    <li>Hasta 500 leads/mes</li>
+                    <li>Email automático de bienvenida</li>
+                    <li>Exportación de datos (CSV)</li>
+                    <li>Soporte por email</li>
+                </ul>
+                <a href="#demo" class="plan-button">Comenzar Ahora</a>
             </div>
 
-            <div class="pricing-grid">
-                <!-- Plan Básico -->
-                <div class="pricing-card">
-                    <h3 class="plan-name">Básico</h3>
-                    <div class="plan-price">$499<span>/mes</span></div>
-                    <p class="plan-period">Perfecto para empezar</p>
-                    <ul class="plan-features">
-                        <li>1 Landing Page</li>
-                        <li>Hasta 500 leads/mes</li>
-                        <li>Dashboard básico</li>
-                        <li>Emails automáticos</li>
-                        <li>Soporte por email</li>
-                        <li>Exportación CSV</li>
-                    </ul>
-                    <a href="#demo" class="plan-button">Comenzar Ahora</a>
-                </div>
+            <!-- Plan Profesional -->
+            <div class="pricing-card featured">
+                <h3 class="plan-name">Profesional</h3>
+                <div class="plan-price">$1,499<span>/mes</span></div>
+                <p class="plan-period">El más equilibrado</p>
+                <ul class="plan-features">
+                    <li>3 Landing Pages personalizadas</li>
+                    <li>3 Servicios separados (Islas)</li>
+                    <li>Workspace multi-servicio</li>
+                    <li>Hasta 2,000 leads/mes</li>
+                    <li>Creative Studio básico</li>
+                    <li>5 solicitudes de diseño/mes</li>
+                    <li>2 videos editados/mes</li>
+                    <li>Estadísticas avanzadas</li>
+                    <li>Soporte prioritario</li>
+                </ul>
+                <a href="#demo" class="plan-button">Comenzar Ahora</a>
+            </div>
 
-                <!-- Plan Profesional -->
-                <div class="pricing-card featured">
-                    <h3 class="plan-name">Profesional</h3>
-                    <div class="plan-price">$999<span>/mes</span></div>
-                    <p class="plan-period">Para negocios en crecimiento</p>
-                    <ul class="plan-features">
-                        <li>5 Landing Pages</li>
-                        <li>Hasta 2,000 leads/mes</li>
-                        <li>Dashboard avanzado</li>
-                        <li>Emails personalizados</li>
-                        <li>Soporte prioritario</li>
-                        <li>Analytics detallados</li>
-                        <li>Exportación múltiple</li>
-                        <li>Reportes personalizados</li>
-                    </ul>
-                    <a href="#demo" class="plan-button">Comenzar Ahora</a>
-                </div>
+            <!-- Plan Empresarial -->
+            <div class="pricing-card">
+                <h3 class="plan-name">Empresarial</h3>
+                <div class="plan-price">$2,999<span>/mes</span></div>
+                <p class="plan-period">Para marcas con múltiples líneas</p>
+                <ul class="plan-features">
+                    <li>5 Landing Pages personalizadas</li>
+                    <li>5 Servicios separados (Islas)</li>
+                    <li>Workspace premium</li>
+                    <li>Leads ilimitados</li>
+                    <li>Creative Studio completo</li>
+                    <li>Diseños ilimitados</li>
+                    <li>5 videos editados/mes</li>
+                    <li>Automatización avanzada</li>
+                    <li>API personalizada</li>
+                    <li>Soporte dedicado 24/7</li>
+                    <li>Consultoría mensual</li>
+                </ul>
+                <a href="#demo" class="plan-button">Contactar Ventas</a>
+            </div>
+        </div>
 
-                <!-- Plan Empresarial -->
-                <div class="pricing-card">
-                    <h3 class="plan-name">Empresarial</h3>
-                    <div class="plan-price">$1,999<span>/mes</span></div>
-                    <p class="plan-period">Para grandes equipos</p>
-                    <ul class="plan-features">
-                        <li>Landing Pages ilimitadas</li>
-                        <li>Leads ilimitados</li>
-                        <li>Dashboard personalizado</li>
-                        <li>Templates ilimitados</li>
-                        <li>Soporte 24/7</li>
-                        <li>Multi-usuario</li>
-                        <li>Reportes avanzados</li>
-                        <li>Gestor de cuenta dedicado</li>
-                        <li>Capacitación incluida</li>
-                    </ul>
-                    <a href="#demo" class="plan-button">Contactar Ventas</a>
+        <!-- FAQ Section -->
+        <div class="faq-section">
+            <h3 class="faq-title">Preguntas Frecuentes</h3>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Puedo cambiar de plan en cualquier momento?</div>
+                <div class="faq-answer">
+                    Sí, puedes actualizar o degradar tu plan en cualquier momento. Los cambios se reflejarán en tu
+                    próximo ciclo de facturación sin penalización.
                 </div>
             </div>
 
-            <!-- FAQ Section -->
-            <div class="faq-section">
-                <h3 class="faq-title">Preguntas Frecuentes</h3>
-
-                <div class="faq-item">
-                    <div class="faq-question">¿Puedo cambiar de plan en cualquier momento?</div>
-                    <div class="faq-answer">
-                        Sí, puedes actualizar o degradar tu plan en cualquier momento. Los cambios se reflejarán en tu
-                        próximo ciclo de facturación.
-                    </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Ofrecen período de prueba?</div>
+                <div class="faq-answer">
+                    Sí, todos los planes incluyen 14 días de prueba gratuita sin necesidad de tarjeta de crédito.
+                    Podrás probar todas las funcionalidades del plan que elijas.
                 </div>
+            </div>
 
-                <div class="faq-item">
-                    <div class="faq-question">¿Ofrecen período de prueba?</div>
-                    <div class="faq-answer">
-                        Sí, todos los planes incluyen 14 días de prueba gratuita sin necesidad de tarjeta de crédito.
-                    </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Qué métodos de pago aceptan?</div>
+                <div class="faq-answer">
+                    Aceptamos tarjetas de crédito/débito (Visa, Mastercard, American Express) a través de Stripe.
+                    También aceptamos transferencias bancarias para planes anuales.
                 </div>
+            </div>
 
-                <div class="faq-item">
-                    <div class="faq-question">¿Qué métodos de pago aceptan?</div>
-                    <div class="faq-answer">
-                        Aceptamos tarjetas de crédito/débito (Visa, Mastercard, American Express) y transferencias
-                        bancarias para planes anuales.
-                    </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Hay descuentos por pago anual?</div>
+                <div class="faq-answer">
+                    Sí, ofrecemos 20% de descuento en todos los planes con facturación anual. Esto significa 2 meses
+                    gratis al año.
                 </div>
+            </div>
 
-                <div class="faq-item">
-                    <div class="faq-question">¿Hay descuentos por pago anual?</div>
-                    <div class="faq-answer">
-                        Sí, ofrecemos 20% de descuento en todos los planes con facturación anual.
-                    </div>
+            <div class="faq-item">
+                <div class="faq-question">¿Qué incluye el Creative Studio?</div>
+                <div class="faq-answer">
+                    El Creative Studio te permite solicitar diseños de anuncios y edición de videos directamente desde
+                    tu Workspace. Nuestro equipo creará las piezas creativas que necesitas para tus campañas de Meta
+                    Ads y Google Ads.
+                </div>
+            </div>
+
+            <div class="faq-item">
+                <div class="faq-question">¿Puedo cancelar en cualquier momento?</div>
+                <div class="faq-answer">
+                    Sí, no hay contratos de permanencia. Puedes cancelar tu suscripción en cualquier momento y
+                    mantendrás acceso hasta el final de tu período de facturación actual.
                 </div>
             </div>
         </div>
-    </section>
-</body>
+    </div>
+</section>
 
-</html>
+<style>
+    /* Reset */
+    .precios-capturaleads * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    /* Container */
+    .precios-capturaleads {
+        background: linear-gradient(135deg, #f8f9ff 0%, #fff 100%);
+        padding: 100px 20px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .precios-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    /* Header */
+    .section-header {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .section-title {
+        font-size: 48px;
+        font-weight: 700;
+        color: #2966ff;
+        margin-bottom: 15px;
+    }
+
+    .section-subtitle {
+        font-size: 20px;
+        color: #666;
+    }
+
+    /* Pricing Grid */
+    .pricing-grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 30px;
+        margin-bottom: 60px;
+    }
+
+    /* Pricing Cards */
+    .pricing-card {
+        background: white;
+        border-radius: 20px;
+        padding: 40px;
+        text-align: center;
+        transition: all 0.3s ease;
+        position: relative;
+        box-shadow: 0 4px 20px rgba(41, 102, 255, 0.08);
+    }
+
+    .pricing-card:hover {
+        transform: translateY(-10px);
+        box-shadow: 0 20px 60px rgba(41, 102, 255, 0.15);
+    }
+
+    .pricing-card.featured {
+        border: 3px solid #2966ff;
+        transform: scale(1.05);
+    }
+
+    .pricing-card.featured::before {
+        content: "MÁS POPULAR";
+        position: absolute;
+        top: -15px;
+        left: 50%;
+        transform: translateX(-50%);
+        background: #2966ff;
+        color: white;
+        padding: 8px 25px;
+        border-radius: 50px;
+        font-size: 12px;
+        font-weight: 700;
+    }
+
+    .plan-name {
+        font-size: 24px;
+        font-weight: 700;
+        color: #2966ff;
+        margin-bottom: 15px;
+    }
+
+    .plan-price {
+        font-size: 48px;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .plan-price span {
+        font-size: 20px;
+        color: #666;
+    }
+
+    .plan-period {
+        font-size: 16px;
+        color: #999;
+        margin-bottom: 30px;
+    }
+
+    .plan-features {
+        list-style: none;
+        padding: 0;
+        margin-bottom: 30px;
+        text-align: left;
+    }
+
+    .plan-features li {
+        padding: 12px 0;
+        color: #555;
+        display: flex;
+        align-items: flex-start;
+        gap: 10px;
+        border-bottom: 1px solid #f0f0f0;
+        font-size: 14px;
+    }
+
+    .plan-features li:last-child {
+        border-bottom: none;
+    }
+
+    .plan-features li::before {
+        content: "✓";
+        color: #2966ff;
+        font-weight: 700;
+        font-size: 18px;
+        flex-shrink: 0;
+    }
+
+    .plan-button {
+        display: block;
+        background: #2966ff;
+        color: white;
+        padding: 15px 30px;
+        border-radius: 50px;
+        font-size: 16px;
+        font-weight: 700;
+        text-decoration: none;
+        transition: all 0.3s ease;
+    }
+
+    .plan-button:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 8px 20px rgba(41, 102, 255, 0.4);
+    }
+
+    /* FAQ Section */
+    .faq-section {
+        background: white;
+        border-radius: 20px;
+        padding: 50px 40px;
+        margin-top: 60px;
+        box-shadow: 0 4px 20px rgba(41, 102, 255, 0.08);
+    }
+
+    .faq-title {
+        font-size: 32px;
+        font-weight: 700;
+        text-align: center;
+        margin-bottom: 40px;
+        color: #2966ff;
+    }
+
+    .faq-item {
+        background: #f8f9ff;
+        padding: 25px;
+        border-radius: 12px;
+        margin-bottom: 15px;
+        border-left: 4px solid #2966ff;
+    }
+
+    .faq-question {
+        font-size: 18px;
+        font-weight: 700;
+        margin-bottom: 12px;
+        color: #333;
+    }
+
+    .faq-answer {
+        font-size: 16px;
+        color: #666;
+        line-height: 1.6;
+    }
+
+    /* Responsive */
+    @media (max-width: 968px) {
+        .pricing-grid {
+            grid-template-columns: 1fr;
+            gap: 40px;
+        }
+
+        .pricing-card.featured {
+            transform: scale(1);
+        }
+    }
+
+    @media (max-width: 768px) {
+        .precios-capturaleads {
+            padding: 60px 15px;
+        }
+
+        .section-title {
+            font-size: 36px;
+        }
+
+        .plan-price {
+            font-size: 40px;
+        }
+
+        .faq-section {
+            padding: 40px 25px;
+        }
+    }
+
+    @media (max-width: 480px) {
+        .section-title {
+            font-size: 28px;
+        }
+
+        .plan-price {
+            font-size: 36px;
+        }
+
+        .faq-section {
+            padding: 30px 20px;
+        }
+
+        .faq-question {
+            font-size: 16px;
+        }
+
+        .faq-answer {
+            font-size: 14px;
+        }
+    }
+</style>

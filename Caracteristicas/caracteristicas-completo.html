@@ -1,242 +1,331 @@
-<!DOCTYPE html>
-<html lang="es">
+<!-- SECCIÓN DE CARACTERÍSTICAS - CAPTURALEADS -->
+<section class="caracteristicas-capturaleads" id="caracteristicas">
+    <div class="caracteristicas-container">
+        <div class="section-header">
+            <h2 class="section-title">Todo lo que Necesitas para Convertir Leads en Clientes</h2>
+            <p class="section-subtitle">Una plataforma completa que une captación, gestión y automatización</p>
+        </div>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Características - CapturaLeads</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-
-        .caracteristicas-wrapper {
-            background: #f8f9fa;
-            padding: 100px 20px;
-        }
-
-        .caracteristicas-container {
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-
-        .section-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .section-title {
-            font-size: 48px;
-            font-weight: 700;
-            color: #2966ff;
-            margin-bottom: 20px;
-        }
-
-        .section-subtitle {
-            font-size: 20px;
-            color: #666;
-            max-width: 700px;
-            margin: 0 auto;
-            line-height: 1.6;
-        }
-
-        .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: 40px;
-            margin-bottom: 60px;
-        }
-
-        .feature-card {
-            background: white;
-            padding: 40px;
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(102, 126, 234, 0.1);
-            transition: all 0.3s ease;
-        }
-
-        .feature-card:hover {
-            transform: translateY(-10px);
-            box-shadow: 0 15px 40px rgba(102, 126, 234, 0.2);
-        }
-
-        .feature-icon {
-            font-size: 48px;
-            margin-bottom: 20px;
-        }
-
-        .feature-title {
-            font-size: 24px;
-            font-weight: 700;
-            color: #333;
-            margin-bottom: 15px;
-        }
-
-        .feature-description {
-            font-size: 16px;
-            color: #666;
-            line-height: 1.8;
-            margin-bottom: 20px;
-        }
-
-        .feature-list {
-            list-style: none;
-            padding: 0;
-        }
-
-        .feature-list li {
-            padding: 8px 0;
-            color: #555;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-        }
-
-        .feature-list li::before {
-            content: "✓";
-            color: #2966ff;
-            font-weight: 700;
-            font-size: 18px;
-        }
-
-        /* Responsive */
-        @media (max-width: 768px) {
-            .caracteristicas-wrapper {
-                padding: 60px 15px;
-            }
-
-            .section-title {
-                font-size: 36px;
-            }
-
-            .section-subtitle {
-                font-size: 18px;
-            }
-
-            .features-grid {
-                grid-template-columns: 1fr;
-                gap: 30px;
-            }
-
-            .feature-card {
-                padding: 30px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <section class="caracteristicas-wrapper" id="caracteristicas">
-        <div class="caracteristicas-container">
-            <div class="section-header">
-                <h2 class="section-title">Características</h2>
-                <p class="section-subtitle">
-                    Todo lo que necesitas para capturar, gestionar y convertir tus leads de manera profesional
+        <div class="features-grid">
+            <!-- Feature 1: Landing Pages -->
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3 class="feature-title">Landing Pages Profesionales</h3>
+                <p class="feature-description">
+                    Páginas de aterrizaje optimizadas para conversión. Diseñadas específicamente para capturar leads
+                    desde tus campañas de Meta Ads y Google Ads.
                 </p>
+                <ul class="feature-list">
+                    <li>Diseño profesional y moderno</li>
+                    <li>Carga rápida (<2 segundos)</li>
+                    <li>100% responsive</li>
+                    <li>SEO optimizado</li>
+                </ul>
             </div>
 
-            <div class="features-grid">
-                <!-- Feature 1 -->
-                <div class="feature-card">
-                    <div class="feature-icon">🎯</div>
-                    <h3 class="feature-title">Landing Pages Personalizadas</h3>
-                    <p class="feature-description">
-                        Crea páginas de captura únicas para cada campaña o producto con nuestro sistema flexible.
-                    </p>
-                    <ul class="feature-list">
-                        <li>Diseños responsive optimizados</li>
-                        <li>Formularios personalizables</li>
-                        <li>Links únicos por campaña</li>
-                        <li>Integración de videos e imágenes</li>
-                        <li>Optimización para conversión</li>
-                    </ul>
+            <!-- Feature 2: Workspace -->
+            <div class="feature-card highlighted">
+                <div class="feature-icon">📊</div>
+                <h3 class="feature-title">Workspace de Gestión</h3>
+                <p class="feature-description">
+                    Tu centro de control de ventas. Organiza leads por servicio, visualiza métricas en tiempo real y
+                    gestiona todo desde una sola pantalla.
+                </p>
+                <ul class="feature-list">
+                    <li>Separación por servicio (Islas)</li>
+                    <li>Métricas en tiempo real</li>
+                    <li>Filtros y búsqueda avanzada</li>
+                    <li>Exportación de datos</li>
+                </ul>
+            </div>
+
+            <!-- Feature 3: Automatización -->
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3 class="feature-title">Automatización Inteligente</h3>
+                <p class="feature-description">
+                    Emails automáticos desde el segundo cero. Tu prospecto entra al funnel de ventas
+                    instantáneamente, sin intervención manual.
+                </p>
+                <ul class="feature-list">
+                    <li>Email de bienvenida automático</li>
+                    <li>Secuencias programadas</li>
+                    <li>Notificaciones al equipo</li>
+                    <li>Templates personalizables</li>
+                </ul>
+            </div>
+
+            <!-- Feature 4: Creative Studio -->
+            <div class="feature-card highlighted">
+                <div class="feature-icon">🎨</div>
+                <h3 class="feature-title">Creative Studio</h3>
+                <p class="feature-description">
+                    Gestiona tus anuncios y videos desde el Workspace. Solicita diseños y ediciones de video para tus
+                    campañas sin salir de la plataforma.
+                </p>
+                <ul class="feature-list">
+                    <li>Galería de diseños de anuncios</li>
+                    <li>Edición de videos para ads</li>
+                    <li>Templates probados</li>
+                    <li>Métricas de rendimiento</li>
+                </ul>
+            </div>
+
+            <!-- Feature 5: Integraciones -->
+            <div class="feature-card">
+                <div class="feature-icon">🔗</div>
+                <h3 class="feature-title">Integraciones Poderosas</h3>
+                <p class="feature-description">
+                    Conecta con las herramientas que ya usas. Píxeles de seguimiento, analytics y más para maximizar
+                    tu ROI publicitario.
+                </p>
+                <ul class="feature-list">
+                    <li>Meta Pixel (Facebook/Instagram)</li>
+                    <li>Google Analytics 4</li>
+                    <li>Google Ads Conversion Tracking</li>
+                    <li>Webhooks personalizados</li>
+                </ul>
+            </div>
+
+            <!-- Feature 6: Analytics -->
+            <div class="feature-card">
+                <div class="feature-icon">📈</div>
+                <h3 class="feature-title">Analytics en Tiempo Real</h3>
+                <p class="feature-description">
+                    Visualiza el rendimiento de tus campañas al instante. Gráficos claros, métricas accionables y
+                    reportes descargables.
+                </p>
+                <ul class="feature-list">
+                    <li>Dashboard de métricas</li>
+                    <li>Tasa de conversión por servicio</li>
+                    <li>Tendencias y comparativas</li>
+                    <li>Reportes exportables</li>
+                </ul>
+            </div>
+        </div>
+
+        <!-- Value Proposition -->
+        <div class="value-section">
+            <h3 class="value-title">¿Por qué CapturaLeads?</h3>
+            <div class="value-grid">
+                <div class="value-item">
+                    <div class="value-icon">⏰</div>
+                    <h4>Ahorra Tiempo</h4>
+                    <p>Automatización que trabaja 24/7 mientras tú descansas</p>
                 </div>
-
-                <!-- Feature 2 -->
-                <div class="feature-card">
-                    <div class="feature-icon">📊</div>
-                    <h3 class="feature-title">Dashboard en Tiempo Real</h3>
-                    <p class="feature-description">
-                        Visualiza y gestiona todos tus leads desde un panel intuitivo con métricas en tiempo real.
-                    </p>
-                    <ul class="feature-list">
-                        <li>Analytics detallados</li>
-                        <li>Métricas de conversión</li>
-                        <li>Filtros avanzados</li>
-                        <li>Exportación de datos</li>
-                        <li>Gráficos interactivos</li>
-                    </ul>
+                <div class="value-item">
+                    <div class="value-icon">📈</div>
+                    <h4>Predictibilidad</h4>
+                    <p>Base de datos organizada para remarketing efectivo</p>
                 </div>
-
-                <!-- Feature 3 -->
-                <div class="feature-card">
-                    <div class="feature-icon">📧</div>
-                    <h3 class="feature-title">Emails Automáticos</h3>
-                    <p class="feature-description">
-                        Envía información automáticamente a cada lead registrado con templates personalizados.
-                    </p>
-                    <ul class="feature-list">
-                        <li>Templates personalizables</li>
-                        <li>Envío automático instantáneo</li>
-                        <li>Seguimiento de apertura</li>
-                        <li>Contenido dinámico</li>
-                        <li>Branding personalizado</li>
-                    </ul>
+                <div class="value-item">
+                    <div class="value-icon">💰</div>
+                    <h4>ROI Medible</h4>
+                    <p>Sabes exactamente cuánto inviertes y cuánto ganas</p>
                 </div>
-
-                <!-- Feature 4 -->
-                <div class="feature-card">
-                    <div class="feature-icon">🔐</div>
-                    <h3 class="feature-title">Gestión de Datos Segura</h3>
-                    <p class="feature-description">
-                        Base de datos segura y organizada con todas las herramientas de gestión que necesitas.
-                    </p>
-                    <ul class="feature-list">
-                        <li>Almacenamiento seguro</li>
-                        <li>Segmentación inteligente</li>
-                        <li>Historial completo</li>
-                        <li>Búsqueda avanzada</li>
-                        <li>Cumplimiento GDPR</li>
-                    </ul>
-                </div>
-
-
-                <!-- Feature 5 -->
-                <div class="feature-card">
-                    <div class="feature-icon">�</div>
-                    <h3 class="feature-title">Multi-dispositivo</h3>
-                    <p class="feature-description">
-                        Accede a tu dashboard desde cualquier dispositivo, en cualquier momento y lugar.
-                    </p>
-                    <ul class="feature-list">
-                        <li>Diseño responsive total</li>
-                        <li>Optimizado para móviles</li>
-                        <li>Sincronización en tiempo real</li>
-                        <li>Notificaciones por email</li>
-                        <li>Acceso desde cualquier navegador</li>
-                    </ul>
-                </div>
-
-                <!-- Feature 6 -->
-                <div class="feature-card">
-                    <div class="feature-icon">⚡</div>
-                    <h3 class="feature-title">Rendimiento Rápido</h3>
-                    <p class="feature-description">
-                        Plataforma optimizada para velocidad y eficiencia en cada interacción.
-                    </p>
-                    <ul class="feature-list">
-                        <li>Carga ultra rápida</li>
-                        <li>Procesamiento instantáneo</li>
-                        <li>Servidores de alta disponibilidad</li>
-                        <li>Respaldo automático</li>
-                        <li>Uptime del 99.9%</li>
-                    </ul>
+                <div class="value-item">
+                    <div class="value-icon">🚀</div>
+                    <h4">Implementación Rápida</h4>
+                        <p>Listo para capturar leads en 7 días</p>
                 </div>
             </div>
         </div>
-    </section>
-</body>
+    </div>
+</section>
 
-</html>
+<style>
+    .caracteristicas-capturaleads * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .caracteristicas-capturaleads {
+        padding: 100px 20px;
+        background: white;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .caracteristicas-container {
+        max-width: 1200px;
+        margin: 0 auto;
+    }
+
+    .section-header {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .section-title {
+        font-size: 42px;
+        font-weight: 800;
+        color: #2966ff;
+        margin-bottom: 15px;
+        line-height: 1.2;
+    }
+
+    .section-subtitle {
+        font-size: 20px;
+        color: #666;
+    }
+
+    .features-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 30px;
+        margin-bottom: 80px;
+    }
+
+    .feature-card {
+        background: #f8f9ff;
+        border-radius: 16px;
+        padding: 35px;
+        transition: all 0.3s ease;
+        border: 2px solid transparent;
+    }
+
+    .feature-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 12px 40px rgba(41, 102, 255, 0.12);
+        border-color: #2966ff;
+    }
+
+    .feature-card.highlighted {
+        background: linear-gradient(135deg, #f8f9ff 0%, #e8edff 100%);
+        border-color: #2966ff;
+    }
+
+    .feature-icon {
+        font-size: 48px;
+        margin-bottom: 20px;
+    }
+
+    .feature-title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 15px;
+    }
+
+    .feature-description {
+        font-size: 16px;
+        color: #666;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .feature-list {
+        list-style: none;
+        padding: 0;
+    }
+
+    .feature-list li {
+        padding: 8px 0;
+        color: #555;
+        font-size: 14px;
+        display: flex;
+        align-items: center;
+        gap: 8px;
+    }
+
+    .feature-list li::before {
+        content: "✓";
+        color: #2966ff;
+        font-weight: 700;
+        font-size: 16px;
+        flex-shrink: 0;
+    }
+
+    /* Value Section */
+    .value-section {
+        background: #2966ff;
+        border-radius: 20px;
+        padding: 60px 40px;
+        text-align: center;
+    }
+
+    .value-title {
+        font-size: 36px;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 40px;
+    }
+
+    .value-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 30px;
+    }
+
+    .value-item {
+        text-align: center;
+    }
+
+    .value-icon {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .value-item h4 {
+        font-size: 18px;
+        font-weight: 700;
+        color: white;
+        margin-bottom: 10px;
+    }
+
+    .value-item p {
+        font-size: 14px;
+        color: rgba(255, 255, 255, 0.9);
+        line-height: 1.5;
+    }
+
+    /* Responsive */
+    @media (max-width: 968px) {
+        .features-grid {
+            grid-template-columns: 1fr;
+            gap: 25px;
+        }
+
+        .value-grid {
+            grid-template-columns: repeat(2, 1fr);
+            gap: 25px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .caracteristicas-capturaleads {
+            padding: 70px 15px;
+        }
+
+        .section-title {
+            font-size: 32px;
+        }
+
+        .section-subtitle {
+            font-size: 18px;
+        }
+
+        .value-section {
+            padding: 40px 25px;
+        }
+
+        .value-title {
+            font-size: 28px;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .section-title {
+            font-size: 28px;
+        }
+
+        .feature-card {
+            padding: 25px;
+        }
+
+        .value-grid {
+            grid-template-columns: 1fr;
+            gap: 20px;
+        }
+    }
+</style>
