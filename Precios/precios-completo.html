@@ -61,95 +61,6 @@
                 <a href="#demo" class="plan-button">Contactar Ventas</a>
             </div>
         </div>
-
-        <!-- Servicios Adicionales -->
-        <div class="additional-services">
-            <h3 class="services-title">Servicios Adicionales</h3>
-            <p class="services-subtitle">Potencia tu plan con servicios profesionales</p>
-
-            <div class="services-grid">
-                <div class="service-card">
-                    <div class="service-icon">🎨</div>
-                    <h4>Diseño de Anuncios</h4>
-                    <p>Diseños profesionales para tus campañas de Meta Ads y Google Ads</p>
-                    <div class="service-price">Desde $500 MXN/diseño</div>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">🎬</div>
-                    <h4>Edición de Videos</h4>
-                    <p>Videos optimizados para publicidad que convierten</p>
-                    <div class="service-price">Desde $1,500 MXN/video</div>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">🔧</div>
-                    <h4>Automatización Avanzada</h4>
-                    <p>Workflows personalizados y secuencias de email complejas</p>
-                    <div class="service-price">Cotización personalizada</div>
-                </div>
-
-                <div class="service-card">
-                    <div class="service-icon">💼</div>
-                    <h4>Consultoría</h4>
-                    <p>Asesoría estratégica para optimizar tu embudo de ventas</p>
-                    <div class="service-price">Desde $2,000 MXN/sesión</div>
-                </div>
-            </div>
-        </div>
-
-        <!-- FAQ Section -->
-        <div class="faq-section">
-            <h3 class="faq-title">Preguntas Frecuentes</h3>
-
-            <div class="faq-item">
-                <div class="faq-question">¿Puedo cambiar de plan en cualquier momento?</div>
-                <div class="faq-answer">
-                    Sí, puedes actualizar o degradar tu plan en cualquier momento. Los cambios se reflejarán en tu
-                    próximo ciclo de facturación sin penalización.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">¿Ofrecen período de prueba?</div>
-                <div class="faq-answer">
-                    Sí, todos los planes incluyen 14 días de prueba gratuita sin necesidad de tarjeta de crédito.
-                    Podrás probar todas las funcionalidades del plan que elijas.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">¿Qué métodos de pago aceptan?</div>
-                <div class="faq-answer">
-                    Aceptamos tarjetas de crédito/débito (Visa, Mastercard, American Express) a través de Stripe.
-                    También aceptamos transferencias bancarias para planes anuales.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">¿Hay descuentos por pago anual?</div>
-                <div class="faq-answer">
-                    Sí, ofrecemos 20% de descuento en todos los planes con facturación anual. Esto significa 2 meses
-                    gratis al año.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">¿Los servicios adicionales se pueden contratar por separado?</div>
-                <div class="faq-answer">
-                    Sí, todos los servicios adicionales (diseño, videos, automatización, consultoría) se pueden
-                    contratar independientemente de tu plan. Contáctanos para cotizaciones personalizadas.
-                </div>
-            </div>
-
-            <div class="faq-item">
-                <div class="faq-question">¿Puedo cancelar en cualquier momento?</div>
-                <div class="faq-answer">
-                    Sí, no hay contratos de permanencia. Puedes cancelar tu suscripción en cualquier momento y
-                    mantendrás acceso hasta el final de tu período de facturación actual.
-                </div>
-            </div>
-        </div>
     </div>
 </section>
 
@@ -196,7 +107,6 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
-        margin-bottom: 80px;
     }
 
     /* Pricing Cards */
@@ -305,109 +215,6 @@
         box-shadow: 0 8px 20px rgba(41, 102, 255, 0.4);
     }
 
-    /* Additional Services */
-    .additional-services {
-        margin-bottom: 80px;
-        text-align: center;
-    }
-
-    .services-title {
-        font-size: 36px;
-        font-weight: 700;
-        color: #2966ff;
-        margin-bottom: 10px;
-    }
-
-    .services-subtitle {
-        font-size: 18px;
-        color: #666;
-        margin-bottom: 40px;
-    }
-
-    .services-grid {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 25px;
-    }
-
-    .service-card {
-        background: white;
-        border-radius: 16px;
-        padding: 30px 20px;
-        text-align: center;
-        border: 2px solid #f0f0f0;
-        transition: all 0.3s ease;
-    }
-
-    .service-card:hover {
-        border-color: #2966ff;
-        transform: translateY(-5px);
-        box-shadow: 0 8px 25px rgba(41, 102, 255, 0.1);
-    }
-
-    .service-icon {
-        font-size: 40px;
-        margin-bottom: 15px;
-    }
-
-    .service-card h4 {
-        font-size: 18px;
-        font-weight: 700;
-        color: #333;
-        margin-bottom: 10px;
-    }
-
-    .service-card p {
-        font-size: 14px;
-        color: #666;
-        line-height: 1.5;
-        margin-bottom: 15px;
-    }
-
-    .service-price {
-        font-size: 16px;
-        font-weight: 700;
-        color: #2966ff;
-    }
-
-    /* FAQ Section */
-    .faq-section {
-        background: white;
-        border-radius: 20px;
-        padding: 50px 40px;
-        margin-top: 60px;
-        box-shadow: 0 4px 20px rgba(41, 102, 255, 0.08);
-    }
-
-    .faq-title {
-        font-size: 32px;
-        font-weight: 700;
-        text-align: center;
-        margin-bottom: 40px;
-        color: #2966ff;
-    }
-
-    .faq-item {
-        background: #f8f9ff;
-        padding: 25px;
-        border-radius: 12px;
-        margin-bottom: 15px;
-        border-left: 4px solid #2966ff;
-    }
-
-    .faq-question {
-        font-size: 18px;
-        font-weight: 700;
-        margin-bottom: 12px;
-        color: #333;
-    }
-
-    .faq-answer {
-        font-size: 16px;
-        color: #666;
-        line-height: 1.6;
-    }
-
     /* Responsive */
     @media (max-width: 968px) {
         .pricing-grid {
@@ -417,10 +224,6 @@
 
         .pricing-card.featured {
             transform: scale(1);
-        }
-
-        .services-grid {
-            grid-template-columns: repeat(2, 1fr);
         }
     }
 
@@ -436,14 +239,6 @@
         .plan-price {
             font-size: 40px;
         }
-
-        .faq-section {
-            padding: 40px 25px;
-        }
-
-        .services-grid {
-            grid-template-columns: 1fr;
-        }
     }
 
     @media (max-width: 480px) {
@@ -453,18 +248,6 @@
 
         .plan-price {
             font-size: 36px;
-        }
-
-        .faq-section {
-            padding: 30px 20px;
-        }
-
-        .faq-question {
-            font-size: 16px;
-        }
-
-        .faq-answer {
-            font-size: 14px;
         }
     }
 </style>
