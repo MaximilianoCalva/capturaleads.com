@@ -1,0 +1,135 @@
+<!-- HEADER WORKSPACE - LOGGED IN (COMPACT) -->
+<style>
+    .header-workspace * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .header-workspace {
+        background: rgba(10, 14, 39, 0.95);
+        backdrop-filter: blur(20px);
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        padding: 4px 20px;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .header-container {
+        max-width: 1600px;
+        margin: 0 auto;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .btn-home {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: rgba(255, 255, 255, 0.05);
+        color: rgba(255, 255, 255, 0.8);
+        padding: 4px 12px;
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: 600;
+        text-decoration: none;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .btn-home:hover {
+        background: rgba(255, 255, 255, 0.1);
+        color: white;
+    }
+
+    .header-actions {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .btn-workspace {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: rgba(41, 102, 255, 0.15);
+        color: #2966ff;
+        padding: 4px 12px;
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: 600;
+        text-decoration: none;
+        border: 1px solid rgba(41, 102, 255, 0.3);
+        transition: all 0.3s ease;
+    }
+
+    .btn-workspace:hover {
+        background: rgba(41, 102, 255, 0.25);
+    }
+
+    .btn-logout {
+        display: inline-flex;
+        align-items: center;
+        gap: 6px;
+        background: rgba(255, 255, 255, 0.05);
+        color: rgba(255, 255, 255, 0.8);
+        padding: 4px 12px;
+        border-radius: 6px;
+        font-size: 12px;
+        font-weight: 600;
+        text-decoration: none;
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        transition: all 0.3s ease;
+    }
+
+    .btn-logout:hover {
+        background: rgba(255, 59, 48, 0.15);
+        border-color: rgba(255, 59, 48, 0.3);
+        color: #ff3b30;
+    }
+
+    /* Responsive */
+    @media (max-width: 768px) {
+        .header-workspace {
+            padding: 3px 12px;
+        }
+
+        .logo-text {
+            font-size: 16px;
+        }
+
+        .logo-icon {
+            font-size: 20px;
+        }
+    }
+
+    @media (max-width: 576px) {
+
+        .btn-workspace span:last-child,
+        .btn-logout span:last-child {
+            display: none;
+        }
+    }
+</style>
+
+<header class="header-workspace">
+    <div class="header-container">
+        <a href="https://capturaleads.com/" class="btn-home">
+            <span>�</span>
+            <span>Página Principal</span>
+        </a>
+
+        <div class="header-actions">
+            <a href="https://workspace.capturaleads.com/user" class="btn-workspace">
+                <span>📊</span>
+                <span>Workspace</span>
+            </a>
+            <a href="https://workspace.capturaleads.com/wp-login.php?action=logout&redirect_to=https%3A%2F%2Fworkspace.capturaleads.com&_wpnonce=aedb6abbbc"
+                class="btn-logout">
+                <span>🚪</span>
+                <span>Cerrar Sesión</span>
+            </a>
+        </div>
+    </div>
+</header>
