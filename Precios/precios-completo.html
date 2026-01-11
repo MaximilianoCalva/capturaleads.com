@@ -34,10 +34,10 @@
                     <li>3 Servicios separados (Islas)</li>
                     <li>Workspace multi-servicio</li>
                     <li>Hasta 2,000 leads/mes</li>
-                    <li>Creative Studio básico</li>
-                    <li>5 solicitudes de diseño/mes</li>
-                    <li>2 videos editados/mes</li>
                     <li>Estadísticas avanzadas</li>
+                    <li>Filtros y búsqueda avanzada</li>
+                    <li>Emails personalizados</li>
+                    <li>Exportación múltiple</li>
                     <li>Soporte prioritario</li>
                 </ul>
                 <a href="#demo" class="plan-button">Comenzar Ahora</a>
@@ -53,15 +53,50 @@
                     <li>5 Servicios separados (Islas)</li>
                     <li>Workspace premium</li>
                     <li>Leads ilimitados</li>
-                    <li>Creative Studio completo</li>
-                    <li>Diseños ilimitados</li>
-                    <li>5 videos editados/mes</li>
-                    <li>Automatización avanzada</li>
-                    <li>API personalizada</li>
-                    <li>Soporte dedicado 24/7</li>
-                    <li>Consultoría mensual</li>
+                    <li>Usuarios ilimitados</li>
+                    <li>Reportes personalizados</li>
+                    <li>Integraciones avanzadas</li>
+                    <li>Webhooks personalizados</li>
+                    <li>Soporte prioritario</li>
+                    <li>Capacitación incluida</li>
                 </ul>
                 <a href="#demo" class="plan-button">Contactar Ventas</a>
+            </div>
+        </div>
+
+        <!-- Servicios Adicionales -->
+        <div class="additional-services">
+            <h3 class="services-title">Servicios Adicionales</h3>
+            <p class="services-subtitle">Potencia tu plan con servicios profesionales</p>
+
+            <div class="services-grid">
+                <div class="service-card">
+                    <div class="service-icon">🎨</div>
+                    <h4>Diseño de Anuncios</h4>
+                    <p>Diseños profesionales para tus campañas de Meta Ads y Google Ads</p>
+                    <div class="service-price">Desde $500 MXN/diseño</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🎬</div>
+                    <h4>Edición de Videos</h4>
+                    <p>Videos optimizados para publicidad que convierten</p>
+                    <div class="service-price">Desde $1,500 MXN/video</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">🔧</div>
+                    <h4>Automatización Avanzada</h4>
+                    <p>Workflows personalizados y secuencias de email complejas</p>
+                    <div class="service-price">Cotización personalizada</div>
+                </div>
+
+                <div class="service-card">
+                    <div class="service-icon">💼</div>
+                    <h4>Consultoría</h4>
+                    <p>Asesoría estratégica para optimizar tu embudo de ventas</p>
+                    <div class="service-price">Desde $2,000 MXN/sesión</div>
+                </div>
             </div>
         </div>
 
@@ -102,11 +137,10 @@
             </div>
 
             <div class="faq-item">
-                <div class="faq-question">¿Qué incluye el Creative Studio?</div>
+                <div class="faq-question">¿Los servicios adicionales se pueden contratar por separado?</div>
                 <div class="faq-answer">
-                    El Creative Studio te permite solicitar diseños de anuncios y edición de videos directamente desde
-                    tu Workspace. Nuestro equipo creará las piezas creativas que necesitas para tus campañas de Meta
-                    Ads y Google Ads.
+                    Sí, todos los servicios adicionales (diseño, videos, automatización, consultoría) se pueden
+                    contratar independientemente de tu plan. Contáctanos para cotizaciones personalizadas.
                 </div>
             </div>
 
@@ -164,7 +198,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
-        margin-bottom: 60px;
+        margin-bottom: 80px;
     }
 
     /* Pricing Cards */
@@ -273,6 +307,71 @@
         box-shadow: 0 8px 20px rgba(41, 102, 255, 0.4);
     }
 
+    /* Additional Services */
+    .additional-services {
+        margin-bottom: 80px;
+        text-align: center;
+    }
+
+    .services-title {
+        font-size: 36px;
+        font-weight: 700;
+        color: #2966ff;
+        margin-bottom: 10px;
+    }
+
+    .services-subtitle {
+        font-size: 18px;
+        color: #666;
+        margin-bottom: 40px;
+    }
+
+    .services-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 25px;
+    }
+
+    .service-card {
+        background: white;
+        border-radius: 16px;
+        padding: 30px 20px;
+        text-align: center;
+        border: 2px solid #f0f0f0;
+        transition: all 0.3s ease;
+    }
+
+    .service-card:hover {
+        border-color: #2966ff;
+        transform: translateY(-5px);
+        box-shadow: 0 8px 25px rgba(41, 102, 255, 0.1);
+    }
+
+    .service-icon {
+        font-size: 40px;
+        margin-bottom: 15px;
+    }
+
+    .service-card h4 {
+        font-size: 18px;
+        font-weight: 700;
+        color: #333;
+        margin-bottom: 10px;
+    }
+
+    .service-card p {
+        font-size: 14px;
+        color: #666;
+        line-height: 1.5;
+        margin-bottom: 15px;
+    }
+
+    .service-price {
+        font-size: 16px;
+        font-weight: 700;
+        color: #2966ff;
+    }
+
     /* FAQ Section */
     .faq-section {
         background: white;
@@ -321,6 +420,10 @@
         .pricing-card.featured {
             transform: scale(1);
         }
+
+        .services-grid {
+            grid-template-columns: repeat(2, 1fr);
+        }
     }
 
     @media (max-width: 768px) {
@@ -338,6 +441,10 @@
 
         .faq-section {
             padding: 40px 25px;
+        }
+
+        .services-grid {
+            grid-template-columns: 1fr;
         }
     }
 
