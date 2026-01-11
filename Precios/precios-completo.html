@@ -14,12 +14,8 @@
                 <p class="plan-period">Ideal para emprendedores</p>
                 <ul class="plan-features">
                     <li>Página de aterrizaje para tu servicio</li>
-                    <li>Formulario optimizado</li>
-                    <li>Workspace de gestión</li>
                     <li>Hasta 500 leads/mes</li>
                     <li>1 usuario</li>
-                    <li>Email automático de bienvenida</li>
-                    <li>Exportación de datos (CSV)</li>
                     <li>Soporte por email</li>
                 </ul>
                 <a href="#demo" class="plan-button">Comenzar Ahora</a>
@@ -32,13 +28,10 @@
                 <p class="plan-period">El más equilibrado</p>
                 <ul class="plan-features">
                     <li>5 páginas de aterrizaje para tus servicios</li>
-                    <li>Workspace multi-servicio</li>
                     <li>Hasta 2,000 leads/mes</li>
                     <li>Hasta 2 usuarios</li>
-                    <li>Estadísticas avanzadas</li>
                     <li>Filtros y búsqueda avanzada</li>
                     <li>Emails personalizados</li>
-                    <li>Exportación múltiple</li>
                     <li>Soporte prioritario</li>
                 </ul>
                 <a href="#demo" class="plan-button">Comenzar Ahora</a>
@@ -51,16 +44,36 @@
                 <p class="plan-period">Para marcas con múltiples líneas</p>
                 <ul class="plan-features">
                     <li>10 páginas de aterrizaje para tus servicios</li>
-                    <li>Workspace premium</li>
                     <li>Leads ilimitados</li>
                     <li>Hasta 3 usuarios</li>
-                    <li>Reportes personalizados</li>
-                    <li>Integraciones avanzadas</li>
                     <li>Webhooks personalizados</li>
                     <li>Soporte prioritario</li>
                     <li>Capacitación incluida</li>
                 </ul>
                 <a href="#demo" class="plan-button">Contactar Ventas</a>
+            </div>
+        </div>
+
+        <!-- Features Incluidas en Todos -->
+        <div class="included-features">
+            <h3 class="included-title">✨ Incluido en todos los planes</h3>
+            <div class="included-grid">
+                <div class="included-item">
+                    <span class="included-icon">✓</span>
+                    <span>Formulario optimizado</span>
+                </div>
+                <div class="included-item">
+                    <span class="included-icon">✓</span>
+                    <span>Workspace de gestión</span>
+                </div>
+                <div class="included-item">
+                    <span class="included-icon">✓</span>
+                    <span>Email automático de bienvenida</span>
+                </div>
+                <div class="included-item">
+                    <span class="included-icon">✓</span>
+                    <span>Estadísticas avanzadas</span>
+                </div>
             </div>
         </div>
     </div>
@@ -109,6 +122,7 @@
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         gap: 30px;
+        margin-bottom: 60px;
     }
 
     /* Pricing Cards */
@@ -217,6 +231,47 @@
         box-shadow: 0 8px 20px rgba(41, 102, 255, 0.4);
     }
 
+    /* Included Features */
+    .included-features {
+        background: white;
+        border-radius: 20px;
+        padding: 40px;
+        text-align: center;
+        box-shadow: 0 4px 20px rgba(41, 102, 255, 0.08);
+    }
+
+    .included-title {
+        font-size: 24px;
+        font-weight: 700;
+        color: #2966ff;
+        margin-bottom: 30px;
+    }
+
+    .included-grid {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+    }
+
+    .included-item {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px;
+        padding: 15px;
+        background: #f8f9ff;
+        border-radius: 12px;
+        font-size: 14px;
+        color: #333;
+        font-weight: 600;
+    }
+
+    .included-icon {
+        color: #2966ff;
+        font-weight: 700;
+        font-size: 18px;
+    }
+
     /* Responsive */
     @media (max-width: 968px) {
         .pricing-grid {
@@ -226,6 +281,10 @@
 
         .pricing-card.featured {
             transform: scale(1);
+        }
+
+        .included-grid {
+            grid-template-columns: repeat(2, 1fr);
         }
     }
 
@@ -241,6 +300,10 @@
         .plan-price {
             font-size: 40px;
         }
+
+        .included-features {
+            padding: 30px 20px;
+        }
     }
 
     @media (max-width: 480px) {
@@ -250,6 +313,10 @@
 
         .plan-price {
             font-size: 36px;
+        }
+
+        .included-grid {
+            grid-template-columns: 1fr;
         }
     }
 </style>
