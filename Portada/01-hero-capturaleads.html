@@ -1,253 +1,429 @@
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
+<!-- HERO SECTION - CAPTURALEADS -->
+<section class="hero-capturaleads">
+    <div class="hero-container">
+        <div class="hero-content">
+            <div class="hero-badge">
+                <span class="badge-icon">🚀</span>
+                <span class="badge-text">Plataforma #1 de Captura de Leads</span>
+            </div>
 
-        .hero-wrapper {
-            background: #2966ff;
-            color: white;
-            padding: 120px 20px;
-            position: relative;
-            overflow: hidden;
-        }
+            <h1 class="hero-title">
+                Convierte Visitantes en
+                <span class="gradient-text">Clientes Reales</span>
+            </h1>
 
-        .hero-wrapper::before {
-            content: '';
-            position: absolute;
-            top: 0;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            background: url('data:image/svg+xml,<svg width="100" height="100" xmlns="http://www.w3.org/2000/svg"><circle cx="50" cy="50" r="2" fill="rgba(255,255,255,0.1)"/></svg>');
-            opacity: 0.3;
-        }
+            <p class="hero-description">
+                Landing pages profesionales + Workspace inteligente + Automatización completa.
+                Todo lo que necesitas para capturar y convertir leads en una sola plataforma.
+            </p>
 
-        .hero-container {
-            max-width: 1200px;
-            margin: 0 auto;
-            position: relative;
-            z-index: 1;
-            text-align: center;
-        }
-
-        .hero-content h1 {
-            font-size: 56px;
-            font-weight: 800;
-            line-height: 1.2;
-            margin-bottom: 25px;
-            color: white;
-        }
-
-        .hero-highlight {
-            color: #ffd700;
-        }
-
-        .hero-description {
-            font-size: 22px;
-            line-height: 1.6;
-            margin-bottom: 40px;
-            color: white;
-            max-width: 800px;
-            margin-left: auto;
-            margin-right: auto;
-        }
-
-        .hero-features {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            gap: 20px;
-            max-width: 900px;
-            margin: 0 auto 40px;
-        }
-
-        .feature-item {
-            background: rgba(0, 0, 0, 0.3) !important;
-            padding: 20px;
-            border-radius: 12px;
-            display: flex;
-            align-items: center;
-            gap: 15px;
-            font-size: 18px;
-            color: white !important;
-            font-weight: 600;
-            border: 2px solid rgba(255, 255, 255, 0.3);
-            transition: all 0.3s ease;
-        }
-
-        .feature-item:hover {
-            background: rgba(0, 0, 0, 0.4) !important;
-            transform: translateY(-3px);
-        }
-
-        .feature-icon {
-            font-size: 28px;
-            flex-shrink: 0;
-        }
-
-        .feature-item span {
-            color: white !important;
-        }
-
-        .hero-cta {
-            display: flex;
-            gap: 20px;
-            justify-content: center;
-            flex-wrap: wrap;
-        }
-
-        .cta-primary {
-            background: white;
-            color: #2966ff;
-            padding: 18px 45px;
-            border-radius: 50px;
-            font-size: 18px;
-            font-weight: 700;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            box-shadow: 0 8px 25px rgba(255, 255, 255, 0.3);
-        }
-
-        .cta-primary:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 12px 35px rgba(255, 255, 255, 0.4);
-        }
-
-        .cta-secondary {
-            background: transparent;
-            color: white;
-            padding: 18px 45px;
-            border-radius: 50px;
-            font-size: 18px;
-            font-weight: 700;
-            text-decoration: none;
-            transition: all 0.3s ease;
-            border: 2px solid white;
-        }
-
-        .cta-secondary:hover {
-            background: rgba(255, 255, 255, 0.15);
-            transform: translateY(-3px);
-        }
-
-        /* Responsive */
-        @media (max-width: 968px) {
-            .hero-content h1 {
-                font-size: 44px;
-            }
-
-            .hero-description {
-                font-size: 20px;
-            }
-
-            .hero-features {
-                grid-template-columns: 1fr;
-            }
-        }
-
-        @media (max-width: 768px) {
-            .hero-wrapper {
-                padding: 80px 20px;
-            }
-
-            .hero-content h1 {
-                font-size: 36px;
-            }
-
-            .hero-description {
-                font-size: 18px;
-            }
-
-            .feature-item {
-                font-size: 17px;
-                padding: 18px;
-            }
-        }
-
-        @media (max-width: 576px) {
-            .hero-wrapper {
-                padding: 60px 15px;
-            }
-
-            .hero-content h1 {
-                font-size: 32px;
-            }
-
-            .hero-description {
-                font-size: 16px;
-            }
-
-            .feature-item {
-                font-size: 16px;
-                padding: 16px;
-            }
-
-            .feature-icon {
-                font-size: 24px;
-            }
-
-            .hero-cta {
-                flex-direction: column;
-                width: 100%;
-            }
-
-            .cta-primary,
-            .cta-secondary {
-                width: 100%;
-                text-align: center;
-                padding: 16px 30px;
-                font-size: 17px;
-            }
-        }
-
-        @media (max-width: 400px) {
-            .hero-content h1 {
-                font-size: 28px;
-            }
-
-            .cta-primary,
-            .cta-secondary {
-                font-size: 16px;
-                padding: 14px 25px;
-            }
-        }
-    </style>
-</head>
-
-<body>
-    <section class="hero-wrapper">
-        <div class="hero-container">
-            <div class="hero-content">
-                <h1>
-                    Captura y Gestiona tus <span class="hero-highlight">Leads</span> de Forma Profesional
-                </h1>
-                <p class="hero-description">
-                    Crea landing pages personalizadas, captura información valiosa de tus prospectos
-                    y visualiza todos tus datos en un workspace intuitivo. Todo en una sola plataforma.
-                </p>
-
-                <div class="hero-features">
-                    <div class="feature-item">
-                        <span class="feature-icon">✅</span>
-                        <span>Landing pages personalizadas</span>
-                    </div>
-                    <div class="feature-item">
-                        <span class="feature-icon">✅</span>
-                        <span>Workspace en tiempo real</span>
-                    </div>
-                    <div class="feature-item">
-                        <span class="feature-icon">✅</span>
-                        <span>Emails automáticos</span>
-                    </div>
-                    <div class="feature-item">
-                        <span class="feature-icon">✅</span>
-                        <span>Gestión completa de leads</span>
+            <div class="hero-stats">
+                <div class="stat-item">
+                    <div class="stat-number">89%</div>
+                    <div class="stat-label">Tasa de Conversión</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">24/7</div>
+                    <div class="stat-label">Automatización</div>
+                </div>
+                <div class="stat-item">
+                    <div class="stat-number">
+                        < 2s</div>
+                            <div class="stat-label">Carga Rápida</div>
                     </div>
                 </div>
 
                 <div class="hero-cta">
-                    <a href="https://capturaleads.com/contacto/" class="cta-primary">📧 Contáctanos</a>
-                    <a href="#caracteristicas" class="cta-secondary">Ver Características</a>
+                    <a href="https://capturaleads.com/contacto/" class="btn-primary">
+                        <span>Comenzar Ahora</span>
+                        <span class="btn-icon">→</span>
+                    </a>
+                    <a href="https://capturaleads.com/caracteristicas/" class="btn-secondary">
+                        Ver Características
+                    </a>
+                </div>
+
+                <div class="hero-trust">
+                    <span class="trust-text">✓ Sin permanencia</span>
+                    <span class="trust-text">✓ Soporte en español</span>
+                    <span class="trust-text">✓ Implementación rápida</span>
                 </div>
             </div>
+        </div>
+
+        <!-- Animated Background -->
+        <div class="hero-bg">
+            <div class="bg-gradient"></div>
+            <div class="bg-pattern"></div>
+            <div class="floating-element el-1"></div>
+            <div class="floating-element el-2"></div>
+            <div class="floating-element el-3"></div>
+        </div>
+</section>
+
+<style>
+    .hero-capturaleads * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    .hero-capturaleads {
+        position: relative;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        overflow: hidden;
+        background: #0a0e27;
+        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    }
+
+    .hero-container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 120px 40px 80px;
+        position: relative;
+        z-index: 10;
+    }
+
+    .hero-content {
+        max-width: 800px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    /* Badge */
+    .hero-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(41, 102, 255, 0.1);
+        border: 1px solid rgba(41, 102, 255, 0.3);
+        padding: 10px 20px;
+        border-radius: 50px;
+        margin-bottom: 30px;
+        animation: fadeInDown 0.8s ease;
+    }
+
+    .badge-icon {
+        font-size: 18px;
+    }
+
+    .badge-text {
+        color: #2966ff;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    /* Title */
+    .hero-title {
+        font-size: 64px;
+        font-weight: 900;
+        line-height: 1.1;
+        color: white;
+        margin-bottom: 25px;
+        animation: fadeInUp 0.8s ease 0.2s backwards;
+    }
+
+    .gradient-text {
+        background: linear-gradient(135deg, #2966ff 0%, #00d4ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        display: inline-block;
+    }
+
+    /* Description */
+    .hero-description {
+        font-size: 20px;
+        line-height: 1.6;
+        color: rgba(255, 255, 255, 0.8);
+        margin-bottom: 40px;
+        animation: fadeInUp 0.8s ease 0.4s backwards;
+    }
+
+    /* Stats */
+    .hero-stats {
+        display: flex;
+        justify-content: center;
+        gap: 50px;
+        margin-bottom: 40px;
+        animation: fadeInUp 0.8s ease 0.6s backwards;
+    }
+
+    .stat-item {
+        text-align: center;
+    }
+
+    .stat-number {
+        font-size: 36px;
+        font-weight: 800;
+        background: linear-gradient(135deg, #2966ff 0%, #00d4ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
+        margin-bottom: 5px;
+    }
+
+    .stat-label {
+        font-size: 13px;
+        color: rgba(255, 255, 255, 0.6);
+        text-transform: uppercase;
+        letter-spacing: 1px;
+        font-weight: 600;
+    }
+
+    /* CTA Buttons */
+    .hero-cta {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-bottom: 30px;
+        animation: fadeInUp 0.8s ease 0.8s backwards;
+    }
+
+    .btn-primary {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: linear-gradient(135deg, #2966ff 0%, #1a4fd8 100%);
+        color: white;
+        padding: 18px 35px;
+        border-radius: 50px;
+        font-size: 17px;
+        font-weight: 700;
+        text-decoration: none;
+        transition: all 0.3s ease;
+        box-shadow: 0 10px 30px rgba(41, 102, 255, 0.4);
+    }
+
+    .btn-primary:hover {
+        transform: translateY(-3px);
+        box-shadow: 0 15px 40px rgba(41, 102, 255, 0.5);
+    }
+
+    .btn-icon {
+        font-size: 20px;
+        transition: transform 0.3s ease;
+    }
+
+    .btn-primary:hover .btn-icon {
+        transform: translateX(5px);
+    }
+
+    .btn-secondary {
+        display: inline-flex;
+        align-items: center;
+        background: rgba(255, 255, 255, 0.1);
+        backdrop-filter: blur(10px);
+        color: white;
+        padding: 18px 35px;
+        border-radius: 50px;
+        font-size: 17px;
+        font-weight: 700;
+        text-decoration: none;
+        border: 1px solid rgba(255, 255, 255, 0.2);
+        transition: all 0.3s ease;
+    }
+
+    .btn-secondary:hover {
+        background: rgba(255, 255, 255, 0.15);
+        transform: translateY(-3px);
+    }
+
+    /* Trust Badges */
+    .hero-trust {
+        display: flex;
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        animation: fadeInUp 0.8s ease 1s backwards;
+    }
+
+    .trust-text {
+        color: rgba(255, 255, 255, 0.6);
+        font-size: 14px;
+        font-weight: 500;
+    }
+
+    /* Animated Background */
+    .hero-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .bg-gradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle at 20% 50%, rgba(41, 102, 255, 0.15) 0%, transparent 50%),
+            radial-gradient(circle at 80% 80%, rgba(0, 212, 255, 0.15) 0%, transparent 50%);
+    }
+
+    .bg-pattern {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image:
+            linear-gradient(rgba(255, 255, 255, 0.03) 1px, transparent 1px),
+            linear-gradient(90deg, rgba(255, 255, 255, 0.03) 1px, transparent 1px);
+        background-size: 50px 50px;
+        opacity: 0.5;
+    }
+
+    .floating-element {
+        position: absolute;
+        border-radius: 50%;
+        filter: blur(60px);
+        animation: float 20s infinite ease-in-out;
+    }
+
+    .el-1 {
+        width: 300px;
+        height: 300px;
+        background: rgba(41, 102, 255, 0.2);
+        top: 10%;
+        left: 10%;
+        animation-delay: 0s;
+    }
+
+    .el-2 {
+        width: 200px;
+        height: 200px;
+        background: rgba(0, 212, 255, 0.2);
+        top: 60%;
+        right: 15%;
+        animation-delay: -7s;
+    }
+
+    .el-3 {
+        width: 250px;
+        height: 250px;
+        background: rgba(41, 102, 255, 0.15);
+        bottom: 10%;
+        left: 50%;
+        animation-delay: -14s;
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+        from {
+            opacity: 0;
+            transform: translateY(-30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes fadeInUp {
+        from {
+            opacity: 0;
+            transform: translateY(30px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateY(0);
+        }
+    }
+
+    @keyframes float {
+
+        0%,
+        100% {
+            transform: translate(0, 0) scale(1);
+        }
+
+        33% {
+            transform: translate(30px, -30px) scale(1.1);
+        }
+
+        66% {
+            transform: translate(-20px, 20px) scale(0.9);
+        }
+    }
+
+    /* Responsive */
+    @media (max-width: 968px) {
+        .hero-title {
+            font-size: 48px;
+        }
+
+        .hero-stats {
+            gap: 30px;
+        }
+
+        .stat-number {
+            font-size: 28px;
+        }
+    }
+
+    @media (max-width: 768px) {
+        .hero-container {
+            padding: 100px 20px 60px;
+        }
+
+        .hero-title {
+            font-size: 40px;
+        }
+
+        .hero-description {
+            font-size: 18px;
+        }
+
+        .hero-stats {
+            flex-wrap: wrap;
+            gap: 25px;
+        }
+
+        .hero-cta {
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .btn-primary,
+        .btn-secondary {
+            justify-content: center;
+        }
+    }
+
+    @media (max-width: 576px) {
+        .hero-title {
+            font-size: 32px;
+        }
+
+        .hero-description {
+            font-size: 16px;
+        }
+
+        .stat-number {
+            font-size: 24px;
+        }
+
+        .stat-label {
+            font-size: 11px;
+        }
+
+        .btn-primary,
+        .btn-secondary {
+            padding: 16px 30px;
+            font-size: 16px;
+        }
+
+        .hero-trust {
+            flex-direction: column;
+            gap: 10px;
+        }
+    }
+</style>
