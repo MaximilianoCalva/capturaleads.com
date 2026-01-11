@@ -15,7 +15,7 @@
         .hero-wrapper {
             background: #2966ff;
             color: white;
-            padding: 100px 20px;
+            padding: 120px 20px;
             position: relative;
             overflow: hidden;
         }
@@ -34,17 +34,14 @@
         .hero-container {
             max-width: 1200px;
             margin: 0 auto;
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 60px;
-            align-items: center;
             position: relative;
             z-index: 1;
+            text-align: center;
         }
 
         .hero-content h1 {
-            font-size: 52px;
-            font-weight: 700;
+            font-size: 56px;
+            font-weight: 800;
             line-height: 1.2;
             margin-bottom: 25px;
             color: white;
@@ -55,41 +52,58 @@
         }
 
         .hero-description {
-            font-size: 20px;
+            font-size: 22px;
             line-height: 1.6;
-            margin-bottom: 35px;
+            margin-bottom: 40px;
             color: white;
+            max-width: 800px;
+            margin-left: auto;
+            margin-right: auto;
         }
 
         .hero-features {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            margin-bottom: 35px;
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            max-width: 900px;
+            margin: 0 auto 40px;
         }
 
         .feature-item {
+            background: rgba(255, 255, 255, 0.15);
+            padding: 20px;
+            border-radius: 12px;
             display: flex;
             align-items: center;
-            gap: 12px;
+            gap: 15px;
             font-size: 18px;
             color: white;
+            font-weight: 600;
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            transition: all 0.3s ease;
+        }
+
+        .feature-item:hover {
+            background: rgba(255, 255, 255, 0.25);
+            transform: translateY(-3px);
         }
 
         .feature-icon {
-            font-size: 24px;
+            font-size: 28px;
+            flex-shrink: 0;
         }
 
         .hero-cta {
             display: flex;
             gap: 20px;
+            justify-content: center;
             flex-wrap: wrap;
         }
 
         .cta-primary {
             background: white;
             color: #2966ff;
-            padding: 18px 40px;
+            padding: 18px 45px;
             border-radius: 50px;
             font-size: 18px;
             font-weight: 700;
@@ -104,9 +118,9 @@
         }
 
         .cta-secondary {
-            background: rgba(255, 255, 255, 0.2);
+            background: transparent;
             color: white;
-            padding: 18px 40px;
+            padding: 18px 45px;
             border-radius: 50px;
             font-size: 18px;
             font-weight: 700;
@@ -116,136 +130,22 @@
         }
 
         .cta-secondary:hover {
-            background: rgba(255, 255, 255, 0.3);
+            background: rgba(255, 255, 255, 0.15);
             transform: translateY(-3px);
-        }
-
-        .hero-visual {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .dashboard-preview {
-            background: white;
-            border-radius: 20px;
-            padding: 20px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
-            transform: perspective(1000px) rotateY(-5deg);
-            transition: all 0.3s ease;
-        }
-
-        .dashboard-preview:hover {
-            transform: perspective(1000px) rotateY(0deg);
-        }
-
-        .preview-header {
-            background: #2966ff;
-            height: 40px;
-            border-radius: 10px 10px 0 0;
-            display: flex;
-            align-items: center;
-            padding: 0 15px;
-            gap: 8px;
-        }
-
-        .preview-dot {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            background: rgba(255, 255, 255, 0.5);
-        }
-
-        .preview-content {
-            padding: 30px;
-            background: #f8f9fa;
-            border-radius: 0 0 10px 10px;
-        }
-
-        .preview-stats {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 15px;
-            margin-bottom: 20px;
-        }
-
-        .stat-card {
-            background: white;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        }
-
-        .stat-number {
-            font-size: 28px;
-            font-weight: 700;
-            color: #2966ff;
-            margin-bottom: 5px;
-        }
-
-        .stat-label {
-            font-size: 14px;
-            color: #666;
-        }
-
-        .preview-chart {
-            background: white;
-            height: 120px;
-            border-radius: 10px;
-            display: flex;
-            align-items: flex-end;
-            padding: 15px;
-            gap: 8px;
-        }
-
-        .chart-bar {
-            flex: 1;
-            background: #2966ff;
-            border-radius: 5px 5px 0 0;
-            animation: growBar 1s ease;
-        }
-
-        @keyframes growBar {
-            from {
-                height: 0;
-            }
         }
 
         /* Responsive */
         @media (max-width: 968px) {
-            .hero-container {
-                grid-template-columns: 1fr;
-                gap: 50px;
-            }
-
             .hero-content h1 {
                 font-size: 44px;
-                text-align: center;
             }
 
             .hero-description {
-                font-size: 19px;
-                text-align: center;
+                font-size: 20px;
             }
 
             .hero-features {
-                max-width: 600px;
-                margin-left: auto;
-                margin-right: auto;
-            }
-
-            .hero-cta {
-                justify-content: center;
-            }
-
-            .hero-visual {
-                order: -1;
-            }
-
-            .dashboard-preview {
-                transform: none;
-                max-width: 500px;
-                margin: 0 auto;
+                grid-template-columns: 1fr;
             }
         }
 
@@ -264,6 +164,7 @@
 
             .feature-item {
                 font-size: 17px;
+                padding: 18px;
             }
         }
 
@@ -273,7 +174,7 @@
             }
 
             .hero-content h1 {
-                font-size: 28px;
+                font-size: 32px;
             }
 
             .hero-description {
@@ -282,10 +183,11 @@
 
             .feature-item {
                 font-size: 16px;
+                padding: 16px;
             }
 
             .feature-icon {
-                font-size: 20px;
+                font-size: 24px;
             }
 
             .hero-cta {
@@ -300,35 +202,11 @@
                 padding: 16px 30px;
                 font-size: 17px;
             }
-
-            .preview-stats {
-                grid-template-columns: 1fr;
-            }
-
-            .dashboard-preview {
-                padding: 15px;
-            }
-
-            .preview-content {
-                padding: 20px;
-            }
-
-            .stat-number {
-                font-size: 24px;
-            }
-
-            .stat-label {
-                font-size: 13px;
-            }
-
-            .preview-chart {
-                height: 100px;
-            }
         }
 
         @media (max-width: 400px) {
             .hero-content h1 {
-                font-size: 26px;
+                font-size: 28px;
             }
 
             .cta-primary,
@@ -349,61 +227,31 @@
                 </h1>
                 <p class="hero-description">
                     Crea landing pages personalizadas, captura información valiosa de tus prospectos
-                    y visualiza todos tus datos en un dashboard intuitivo. Todo en una sola plataforma.
+                    y visualiza todos tus datos en un workspace intuitivo. Todo en una sola plataforma.
                 </p>
 
                 <div class="hero-features">
                     <div class="feature-item">
                         <span class="feature-icon">✅</span>
-                        <span>Landing pages personalizadas con formularios</span>
+                        <span>Landing pages personalizadas</span>
                     </div>
                     <div class="feature-item">
                         <span class="feature-icon">✅</span>
-                        <span>Dashboard en tiempo real con analytics</span>
+                        <span>Workspace en tiempo real</span>
                     </div>
                     <div class="feature-item">
                         <span class="feature-icon">✅</span>
-                        <span>Envío automático de emails informativos</span>
+                        <span>Emails automáticos</span>
                     </div>
                     <div class="feature-item">
                         <span class="feature-icon">✅</span>
-                        <span>Gestión completa de base de datos</span>
+                        <span>Gestión completa de leads</span>
                     </div>
                 </div>
 
                 <div class="hero-cta">
-                    <a href="https://capturaleads.com/contacto/" class="cta-primary">� Contáctanos</a>
+                    <a href="https://capturaleads.com/contacto/" class="cta-primary">📧 Contáctanos</a>
                     <a href="#caracteristicas" class="cta-secondary">Ver Características</a>
-                </div>
-            </div>
-
-            <div class="hero-visual">
-                <div class="dashboard-preview">
-                    <div class="preview-header">
-                        <div class="preview-dot"></div>
-                        <div class="preview-dot"></div>
-                        <div class="preview-dot"></div>
-                    </div>
-                    <div class="preview-content">
-                        <div class="preview-stats">
-                            <div class="stat-card">
-                                <div class="stat-number">1,247</div>
-                                <div class="stat-label">Leads Capturados</div>
-                            </div>
-                            <div class="stat-card">
-                                <div class="stat-number">89%</div>
-                                <div class="stat-label">Tasa de Conversión</div>
-                            </div>
-                        </div>
-                        <div class="preview-chart">
-                            <div class="chart-bar" style="height: 60%;"></div>
-                            <div class="chart-bar" style="height: 80%;"></div>
-                            <div class="chart-bar" style="height: 45%;"></div>
-                            <div class="chart-bar" style="height: 90%;"></div>
-                            <div class="chart-bar" style="height: 70%;"></div>
-                            <div class="chart-bar" style="height: 95%;"></div>
-                        </div>
-                    </div>
                 </div>
             </div>
         </div>
