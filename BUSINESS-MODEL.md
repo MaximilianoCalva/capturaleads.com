@@ -26,13 +26,38 @@
 
 ---
 
+## 🌐 Estrategia de Dominios e Infraestructura
+
+### Arquitectura de Dominios
+
+Para maximizar la autoridad de marca, confianza del usuario y SEO, se unificará el ecosistema bajo el dominio principal `.com`:
+
+1.  **Sitio Principal (Marketing & Ventas)**
+    *   **Dominio:** `www.capturaleads.com`
+    *   **Propósito:** Información corporativa, precios, casos de éxito y blog.
+
+2.  **Plataforma (App)**
+    *   **Dominio:** `workspace.capturaleads.com`
+    *   **Propósito:** Dashboard de gestión para usuarios registrados (login/register).
+
+3.  **Landing Pages de Clientes (Despliegue)**
+    *   **Subdominio:** `go.capturaleads.com` (o `pages.capturaleads.com`)
+    *   **Estructura:** `go.capturaleads.com/nombre-cliente`
+    *   **Propósito:** Alojamiento de las landing pages generadas para los clientes.
+    *   **Beneficio:** Centraliza el tráfico y autoridad en el dominio principal.
+
+### Dominios Adicionales
+*   **`capturaleads.online`**: Se utilizará como redirección permanente (301) hacia `capturaleads.com` para proteger la marca y capturar tráfico residual.
+
+---
+
 ## 💰 Estructura de Precios
 
 ### Plan Básico - $699 MXN/mes
 **Ideal para:** Emprendedores y pequeños negocios
 
 **Incluye:**
-- 1 Landing Page personalizada
+- 1 Landing Page personalizada (subdominio `go.capturaleads.com`)
 - Formulario optimizado de captura
 - Workspace de gestión completo
 - Almacenamiento ilimitado de leads
@@ -51,6 +76,7 @@
 
 **Incluye:**
 - 3 Landing Pages personalizadas
+- **Dominio Personalizado (CNAME):** Conecta tu propio dominio (ej. `ofertas.tuempresa.com`)
 - Gestión multiformulario en un solo Workspace
 - Estadísticas avanzadas y reportes
 - Automatización de emails personalizada
@@ -69,6 +95,7 @@
 
 **Incluye:**
 - 5 Landing Pages personalizadas
+- Dominio Personalizado (CNAME)
 - Capacidad máxima de gestión
 - Automatización avanzada con workflows
 - API personalizada completa
