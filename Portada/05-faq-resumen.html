@@ -1,150 +1,233 @@
 <!-- RESUMEN DE FAQ - INDEX -->
-<section class="faq-resumen-index" id="faq-resumen">
-    <div class="faq-resumen-container">
+<section class="faq-resumen-premium">
+    <div class="section-container">
         <div class="section-header">
-            <h2 class="section-title">Preguntas Frecuentes</h2>
-            <p class="section-subtitle">Respuestas rápidas a tus dudas más comunes</p>
+            <div class="header-badge">
+                <span class="badge-icon">❓</span>
+                <span>Preguntas Frecuentes</span>
+            </div>
+            <h2 class="section-title">
+                Resuelve tus
+                <span class="gradient-text">Dudas</span>
+            </h2>
+            <p class="section-subtitle">Las respuestas que necesitas</p>
         </div>
 
         <div class="faq-grid">
             <div class="faq-card">
+                <div class="card-glow"></div>
                 <div class="faq-icon">🔄</div>
-                <h3 class="faq-title">¿Puedo cambiar de plan?</h3>
-                <p class="faq-answer">Sí, en cualquier momento sin penalización</p>
+                <h3>¿Puedo cambiar de plan?</h3>
+                <p>Sí, puedes actualizar o reducir tu plan en cualquier momento</p>
             </div>
 
             <div class="faq-card">
+                <div class="card-glow"></div>
                 <div class="faq-icon">💳</div>
-                <h3 class="faq-title">¿Métodos de pago?</h3>
-                <p class="faq-answer">Visa y Mastercard vía Stripe</p>
+                <h3>¿Métodos de pago?</h3>
+                <p>Aceptamos Visa y Mastercard a través de Stripe</p>
             </div>
 
             <div class="faq-card">
+                <div class="card-glow"></div>
                 <div class="faq-icon">👥</div>
-                <h3 class="faq-title">¿Múltiples usuarios?</h3>
-                <p class="faq-answer">1, 2 o 3 usuarios según tu plan</p>
+                <h3>¿Múltiples usuarios?</h3>
+                <p>Sí, según tu plan: 1, 2 o 3 usuarios con acceso completo</p>
             </div>
 
             <div class="faq-card">
+                <div class="card-glow"></div>
                 <div class="faq-icon">❌</div>
-                <h3 class="faq-title">¿Puedo cancelar?</h3>
-                <p class="faq-answer">Sí, sin contratos de permanencia</p>
+                <h3>¿Puedo cancelar?</h3>
+                <p>Sí, sin permanencia. Cancela cuando quieras</p>
             </div>
         </div>
 
         <div class="cta-section">
-            <p class="cta-text">¿Tienes más preguntas?</p>
-            <a href="https://capturaleads.com/preguntas-frecuentes/" class="cta-button">Ver Todas las Preguntas</a>
+            <a href="https://capturaleads.com/preguntas-frecuentes/" class="btn-gradient">
+                <span>Ver Todas las Preguntas</span>
+                <span class="btn-arrow">→</span>
+            </a>
         </div>
+    </div>
+
+    <div class="section-bg">
+        <div class="bg-gradient"></div>
     </div>
 </section>
 
 <style>
-    .faq-resumen-index * {
+    .faq-resumen-premium * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
 
-    .faq-resumen-index {
-        padding: 80px 20px;
-        background: linear-gradient(135deg, #f8f9ff 0%, #fff 100%);
+    .faq-resumen-premium {
+        position: relative;
+        padding: 100px 20px;
+        background: #0a0e27;
+        overflow: hidden;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     }
 
-    .faq-resumen-container {
+    .section-container {
         max-width: 1200px;
         margin: 0 auto;
+        position: relative;
+        z-index: 10;
     }
 
     .section-header {
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 60px;
+    }
+
+    .header-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(41, 102, 255, 0.1);
+        border: 1px solid rgba(41, 102, 255, 0.3);
+        padding: 8px 20px;
+        border-radius: 50px;
+        margin-bottom: 20px;
+        color: #2966ff;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .badge-icon {
+        font-size: 16px;
     }
 
     .section-title {
-        font-size: 42px;
-        font-weight: 800;
-        color: #2966ff;
-        margin-bottom: 12px;
+        font-size: 48px;
+        font-weight: 900;
+        color: white;
+        margin-bottom: 15px;
+        line-height: 1.2;
+    }
+
+    .gradient-text {
+        background: linear-gradient(135deg, #2966ff 0%, #00d4ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
     }
 
     .section-subtitle {
         font-size: 18px;
-        color: #666;
+        color: rgba(255, 255, 255, 0.7);
     }
 
     .faq-grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 25px;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
     }
 
     .faq-card {
-        background: white;
-        border-radius: 16px;
-        padding: 30px 20px;
+        position: relative;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        padding: 35px 25px;
         text-align: center;
-        transition: all 0.3s ease;
-        border: 2px solid transparent;
-        box-shadow: 0 2px 10px rgba(41, 102, 255, 0.05);
+        transition: all 0.4s ease;
+        overflow: hidden;
     }
 
     .faq-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 12px 40px rgba(41, 102, 255, 0.12);
-        border-color: #2966ff;
+        transform: translateY(-10px);
+        border-color: rgba(41, 102, 255, 0.5);
+        background: rgba(255, 255, 255, 0.08);
+    }
+
+    .card-glow {
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(41, 102, 255, 0.15) 0%, transparent 70%);
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+
+    .faq-card:hover .card-glow {
+        opacity: 1;
     }
 
     .faq-icon {
-        font-size: 40px;
-        margin-bottom: 15px;
+        font-size: 48px;
+        margin-bottom: 20px;
+        filter: drop-shadow(0 0 20px rgba(41, 102, 255, 0.3));
     }
 
-    .faq-title {
-        font-size: 16px;
+    .faq-card h3 {
+        font-size: 18px;
         font-weight: 700;
-        color: #333;
-        margin-bottom: 10px;
+        color: white;
+        margin-bottom: 12px;
     }
 
-    .faq-answer {
+    .faq-card p {
         font-size: 14px;
-        color: #666;
+        color: rgba(255, 255, 255, 0.6);
         line-height: 1.5;
     }
 
     .cta-section {
         text-align: center;
-        padding: 40px;
-        background: white;
-        border-radius: 16px;
-        box-shadow: 0 4px 20px rgba(41, 102, 255, 0.08);
     }
 
-    .cta-text {
-        font-size: 18px;
-        color: #333;
-        margin-bottom: 20px;
-        font-weight: 600;
-    }
-
-    .cta-button {
-        display: inline-block;
-        background: #2966ff;
+    .btn-gradient {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: linear-gradient(135deg, #2966ff 0%, #1a4fd8 100%);
         color: white;
-        padding: 15px 40px;
+        padding: 16px 35px;
         border-radius: 50px;
         font-size: 16px;
         font-weight: 700;
         text-decoration: none;
         transition: all 0.3s ease;
+        box-shadow: 0 10px 30px rgba(41, 102, 255, 0.4);
     }
 
-    .cta-button:hover {
+    .btn-gradient:hover {
         transform: translateY(-3px);
-        box-shadow: 0 8px 25px rgba(41, 102, 255, 0.3);
+        box-shadow: 0 15px 40px rgba(41, 102, 255, 0.5);
+    }
+
+    .btn-arrow {
+        transition: transform 0.3s ease;
+    }
+
+    .btn-gradient:hover .btn-arrow {
+        transform: translateX(5px);
+    }
+
+    .section-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .bg-gradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle at 30% 70%, rgba(41, 102, 255, 0.1) 0%, transparent 50%);
     }
 
     /* Responsive */
@@ -152,29 +235,33 @@
         .faq-grid {
             grid-template-columns: repeat(2, 1fr);
         }
+
+        .section-title {
+            font-size: 40px;
+        }
     }
 
     @media (max-width: 768px) {
-        .faq-resumen-index {
-            padding: 60px 15px;
+        .faq-resumen-premium {
+            padding: 70px 15px;
         }
 
         .section-title {
             font-size: 32px;
         }
+    }
 
+    @media (max-width: 576px) {
         .faq-grid {
             grid-template-columns: 1fr;
         }
 
-        .cta-section {
-            padding: 30px 20px;
-        }
-    }
-
-    @media (max-width: 576px) {
         .section-title {
             font-size: 28px;
+        }
+
+        .faq-card {
+            padding: 30px 20px;
         }
     }
 </style>

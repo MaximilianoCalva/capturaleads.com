@@ -1,164 +1,271 @@
 <!-- RESUMEN DE CONTACTO - INDEX -->
-<section class="contacto-resumen-index" id="contacto-resumen">
-    <div class="contacto-resumen-container">
+<section class="contacto-resumen-premium">
+    <div class="section-container">
         <div class="section-header">
-            <h2 class="section-title">¿Listo para Transformar tu Negocio?</h2>
-            <p class="section-subtitle">Contáctanos y descubre cómo CapturaLeads puede ayudarte</p>
+            <div class="header-badge">
+                <span class="badge-icon">📧</span>
+                <span>Contacto</span>
+            </div>
+            <h2 class="section-title">
+                ¿Listo para
+                <span class="gradient-text">Comenzar?</span>
+            </h2>
+            <p class="section-subtitle">Estamos aquí para ayudarte</p>
         </div>
 
-        <div class="contacto-info-grid">
-            <div class="info-card">
-                <div class="info-icon">📧</div>
-                <h3>Email</h3>
-                <a href="mailto:contacto@capturaleads.com">contacto@capturaleads.com</a>
-            </div>
+        <div class="contact-content">
+            <div class="contact-card">
+                <div class="card-glow"></div>
 
-            <div class="info-card">
-                <div class="info-icon">⏰</div>
-                <h3>Horario</h3>
-                <p>Lun - Vie: 9am - 6pm</p>
-            </div>
+                <div class="contact-info">
+                    <div class="info-item">
+                        <div class="info-icon">📧</div>
+                        <div class="info-details">
+                            <h4>Email</h4>
+                            <a href="mailto:contacto@capturaleads.com">contacto@capturaleads.com</a>
+                        </div>
+                    </div>
 
-            <div class="info-card">
-                <div class="info-icon">📍</div>
-                <h3>Ubicación</h3>
-                <p>Guadalajara, Jalisco</p>
+                    <div class="info-item">
+                        <div class="info-icon">🕐</div>
+                        <div class="info-details">
+                            <h4>Horario</h4>
+                            <p>Lun - Vie: 9am - 6pm GMT-6</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">📍</div>
+                        <div class="info-details">
+                            <h4>Ubicación</h4>
+                            <p>Guadalajara, Jalisco, México</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="cta-section">
+                    <a href="https://capturaleads.com/contacto/" class="btn-gradient">
+                        <span>Ir a Contacto</span>
+                        <span class="btn-arrow">→</span>
+                    </a>
+                </div>
             </div>
         </div>
+    </div>
 
-        <div class="cta-section">
-            <a href="https://capturaleads.com/contacto/" class="cta-button">Ver Más Información</a>
-        </div>
+    <div class="section-bg">
+        <div class="bg-gradient"></div>
     </div>
 </section>
 
 <style>
-    .contacto-resumen-index * {
+    .contacto-resumen-premium * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
 
-    .contacto-resumen-index {
-        padding: 80px 20px;
-        background: linear-gradient(135deg, #f8f9ff 0%, #fff 100%);
+    .contacto-resumen-premium {
+        position: relative;
+        padding: 100px 20px;
+        background: #0a0e27;
+        overflow: hidden;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     }
 
-    .contacto-resumen-container {
-        max-width: 1200px;
+    .section-container {
+        max-width: 800px;
         margin: 0 auto;
+        position: relative;
+        z-index: 10;
     }
 
     .section-header {
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 60px;
+    }
+
+    .header-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(41, 102, 255, 0.1);
+        border: 1px solid rgba(41, 102, 255, 0.3);
+        padding: 8px 20px;
+        border-radius: 50px;
+        margin-bottom: 20px;
+        color: #2966ff;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .badge-icon {
+        font-size: 16px;
     }
 
     .section-title {
-        font-size: 42px;
-        font-weight: 800;
-        color: #2966ff;
-        margin-bottom: 12px;
+        font-size: 48px;
+        font-weight: 900;
+        color: white;
+        margin-bottom: 15px;
+        line-height: 1.2;
+    }
+
+    .gradient-text {
+        background: linear-gradient(135deg, #2966ff 0%, #00d4ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
     }
 
     .section-subtitle {
         font-size: 18px;
-        color: #666;
+        color: rgba(255, 255, 255, 0.7);
     }
 
-    .contacto-info-grid {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
+    .contact-card {
+        position: relative;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 24px;
+        padding: 50px 40px;
+        overflow: hidden;
+    }
+
+    .card-glow {
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(41, 102, 255, 0.15) 0%, transparent 70%);
+        opacity: 0.5;
+    }
+
+    .contact-info {
+        display: flex;
+        flex-direction: column;
         gap: 30px;
         margin-bottom: 40px;
     }
 
-    .info-card {
-        background: white;
+    .info-item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        padding: 20px;
+        background: rgba(255, 255, 255, 0.05);
         border-radius: 16px;
-        padding: 35px 25px;
-        text-align: center;
+        border: 1px solid rgba(255, 255, 255, 0.1);
         transition: all 0.3s ease;
-        border: 2px solid transparent;
     }
 
-    .info-card:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 12px 40px rgba(41, 102, 255, 0.12);
-        border-color: #2966ff;
+    .info-item:hover {
+        background: rgba(255, 255, 255, 0.08);
+        border-color: rgba(41, 102, 255, 0.3);
     }
 
     .info-icon {
-        font-size: 48px;
-        margin-bottom: 15px;
+        font-size: 36px;
+        filter: drop-shadow(0 0 15px rgba(41, 102, 255, 0.3));
     }
 
-    .info-card h3 {
-        font-size: 18px;
+    .info-details h4 {
+        font-size: 16px;
         font-weight: 700;
-        color: #333;
-        margin-bottom: 10px;
+        color: white;
+        margin-bottom: 5px;
     }
 
-    .info-card p,
-    .info-card a {
+    .info-details p,
+    .info-details a {
         font-size: 15px;
-        color: #666;
+        color: rgba(255, 255, 255, 0.7);
         text-decoration: none;
     }
 
-    .info-card a {
+    .info-details a:hover {
         color: #2966ff;
-        font-weight: 600;
-    }
-
-    .info-card a:hover {
-        text-decoration: underline;
     }
 
     .cta-section {
         text-align: center;
     }
 
-    .cta-button {
-        display: inline-block;
-        background: #2966ff;
+    .btn-gradient {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: linear-gradient(135deg, #2966ff 0%, #1a4fd8 100%);
         color: white;
-        padding: 15px 40px;
+        padding: 16px 35px;
         border-radius: 50px;
         font-size: 16px;
         font-weight: 700;
         text-decoration: none;
         transition: all 0.3s ease;
+        box-shadow: 0 10px 30px rgba(41, 102, 255, 0.4);
     }
 
-    .cta-button:hover {
+    .btn-gradient:hover {
         transform: translateY(-3px);
-        box-shadow: 0 8px 25px rgba(41, 102, 255, 0.3);
+        box-shadow: 0 15px 40px rgba(41, 102, 255, 0.5);
+    }
+
+    .btn-arrow {
+        transition: transform 0.3s ease;
+    }
+
+    .btn-gradient:hover .btn-arrow {
+        transform: translateX(5px);
+    }
+
+    .section-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .bg-gradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle at 50% 50%, rgba(41, 102, 255, 0.15) 0%, transparent 60%);
     }
 
     /* Responsive */
-    @media (max-width: 968px) {
-        .contacto-info-grid {
-            grid-template-columns: 1fr;
-            gap: 20px;
-        }
-    }
-
     @media (max-width: 768px) {
-        .contacto-resumen-index {
-            padding: 60px 15px;
+        .contacto-resumen-premium {
+            padding: 70px 15px;
         }
 
         .section-title {
-            font-size: 32px;
+            font-size: 36px;
+        }
+
+        .contact-card {
+            padding: 40px 25px;
+        }
+
+        .info-item {
+            flex-direction: column;
+            text-align: center;
         }
     }
 
     @media (max-width: 576px) {
         .section-title {
-            font-size: 28px;
+            font-size: 32px;
+        }
+
+        .contact-card {
+            padding: 30px 20px;
         }
     }
 </style>

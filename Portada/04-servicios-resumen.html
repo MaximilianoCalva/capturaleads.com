@@ -1,163 +1,267 @@
 <!-- RESUMEN DE SERVICIOS ADICIONALES - INDEX -->
-<section class="servicios-resumen-index" id="servicios-resumen">
-    <div class="servicios-resumen-container">
+<section class="servicios-resumen-premium">
+    <div class="section-container">
         <div class="section-header">
-            <h2 class="section-title">Servicios Adicionales</h2>
-            <p class="section-subtitle">Potencia tu estrategia con servicios profesionales</p>
+            <div class="header-badge">
+                <span class="badge-icon">🎨</span>
+                <span>Servicios Adicionales</span>
+            </div>
+            <h2 class="section-title">
+                Potencia tus
+                <span class="gradient-text">Campañas</span>
+            </h2>
+            <p class="section-subtitle">Servicios profesionales para maximizar resultados</p>
         </div>
 
-        <div class="services-showcase">
-            <div class="service-item">
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="card-glow"></div>
                 <div class="service-icon">🎨</div>
-                <h3 class="service-name">Diseño de Anuncios</h3>
-                <p class="service-desc">Creativos profesionales para tus campañas</p>
+                <h3>Diseño de Anuncios</h3>
+                <p>Creativos profesionales para Meta Ads y Google Ads</p>
             </div>
 
-            <div class="service-item">
+            <div class="service-card">
+                <div class="card-glow"></div>
                 <div class="service-icon">🎬</div>
-                <h3 class="service-name">Edición de Videos</h3>
-                <p class="service-desc">Videos optimizados que convierten</p>
+                <h3>Edición de Videos</h3>
+                <p>Videos optimizados para redes sociales y anuncios</p>
             </div>
 
-            <div class="service-item">
+            <div class="service-card">
+                <div class="card-glow"></div>
                 <div class="service-icon">🔧</div>
-                <h3 class="service-name">Automatización Avanzada</h3>
-                <p class="service-desc">Workflows personalizados</p>
+                <h3>Automatización Avanzada</h3>
+                <p>Flujos personalizados con n8n y webhooks</p>
             </div>
 
-            <div class="service-item">
+            <div class="service-card">
+                <div class="card-glow"></div>
                 <div class="service-icon">💼</div>
-                <h3 class="service-name">Consultoría</h3>
-                <p class="service-desc">Asesoría estratégica especializada</p>
+                <h3>Consultoría</h3>
+                <p>Estrategia y optimización de campañas</p>
             </div>
         </div>
 
         <div class="cta-section">
-            <a href="https://capturaleads.com/servicios-adicionales/" class="cta-button">Ver Servicios</a>
+            <a href="https://capturaleads.com/servicios-adicionales/" class="btn-gradient">
+                <span>Ver Todos los Servicios</span>
+                <span class="btn-arrow">→</span>
+            </a>
         </div>
+    </div>
+
+    <div class="section-bg">
+        <div class="bg-gradient"></div>
     </div>
 </section>
 
 <style>
-    .servicios-resumen-index * {
+    .servicios-resumen-premium * {
         margin: 0;
         padding: 0;
         box-sizing: border-box;
     }
 
-    .servicios-resumen-index {
-        padding: 80px 20px;
-        background: white;
+    .servicios-resumen-premium {
+        position: relative;
+        padding: 100px 20px;
+        background: #0a0e27;
+        overflow: hidden;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     }
 
-    .servicios-resumen-container {
+    .section-container {
         max-width: 1200px;
         margin: 0 auto;
+        position: relative;
+        z-index: 10;
     }
 
     .section-header {
         text-align: center;
-        margin-bottom: 50px;
+        margin-bottom: 60px;
+    }
+
+    .header-badge {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        background: rgba(41, 102, 255, 0.1);
+        border: 1px solid rgba(41, 102, 255, 0.3);
+        padding: 8px 20px;
+        border-radius: 50px;
+        margin-bottom: 20px;
+        color: #2966ff;
+        font-size: 14px;
+        font-weight: 600;
+    }
+
+    .badge-icon {
+        font-size: 16px;
     }
 
     .section-title {
-        font-size: 42px;
-        font-weight: 800;
-        color: #2966ff;
-        margin-bottom: 12px;
+        font-size: 48px;
+        font-weight: 900;
+        color: white;
+        margin-bottom: 15px;
+        line-height: 1.2;
+    }
+
+    .gradient-text {
+        background: linear-gradient(135deg, #2966ff 0%, #00d4ff 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-clip: text;
     }
 
     .section-subtitle {
         font-size: 18px;
-        color: #666;
+        color: rgba(255, 255, 255, 0.7);
     }
 
-    .services-showcase {
+    .services-grid {
         display: grid;
         grid-template-columns: repeat(4, 1fr);
         gap: 25px;
-        margin-bottom: 40px;
+        margin-bottom: 50px;
     }
 
-    .service-item {
-        background: #f8f9ff;
-        border-radius: 16px;
-        padding: 30px 20px;
+    .service-card {
+        position: relative;
+        background: rgba(255, 255, 255, 0.05);
+        backdrop-filter: blur(10px);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
+        padding: 40px 25px;
         text-align: center;
-        transition: all 0.3s ease;
-        border: 2px solid transparent;
+        transition: all 0.4s ease;
+        overflow: hidden;
     }
 
-    .service-item:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 12px 40px rgba(41, 102, 255, 0.12);
-        border-color: #2966ff;
+    .service-card:hover {
+        transform: translateY(-10px);
+        border-color: rgba(41, 102, 255, 0.5);
+        background: rgba(255, 255, 255, 0.08);
+    }
+
+    .card-glow {
+        position: absolute;
+        top: -50%;
+        left: -50%;
+        width: 200%;
+        height: 200%;
+        background: radial-gradient(circle, rgba(41, 102, 255, 0.15) 0%, transparent 70%);
+        opacity: 0;
+        transition: opacity 0.4s ease;
+    }
+
+    .service-card:hover .card-glow {
+        opacity: 1;
     }
 
     .service-icon {
-        font-size: 48px;
-        margin-bottom: 15px;
+        font-size: 56px;
+        margin-bottom: 20px;
+        filter: drop-shadow(0 0 20px rgba(41, 102, 255, 0.3));
     }
 
-    .service-name {
-        font-size: 18px;
+    .service-card h3 {
+        font-size: 20px;
         font-weight: 700;
-        color: #333;
-        margin-bottom: 8px;
+        color: white;
+        margin-bottom: 10px;
     }
 
-    .service-desc {
+    .service-card p {
         font-size: 14px;
-        color: #666;
-        line-height: 1.4;
+        color: rgba(255, 255, 255, 0.6);
+        line-height: 1.5;
     }
 
     .cta-section {
         text-align: center;
     }
 
-    .cta-button {
-        display: inline-block;
-        background: #2966ff;
+    .btn-gradient {
+        display: inline-flex;
+        align-items: center;
+        gap: 10px;
+        background: linear-gradient(135deg, #2966ff 0%, #1a4fd8 100%);
         color: white;
-        padding: 15px 40px;
+        padding: 16px 35px;
         border-radius: 50px;
         font-size: 16px;
         font-weight: 700;
         text-decoration: none;
         transition: all 0.3s ease;
+        box-shadow: 0 10px 30px rgba(41, 102, 255, 0.4);
     }
 
-    .cta-button:hover {
+    .btn-gradient:hover {
         transform: translateY(-3px);
-        box-shadow: 0 8px 25px rgba(41, 102, 255, 0.3);
+        box-shadow: 0 15px 40px rgba(41, 102, 255, 0.5);
+    }
+
+    .btn-arrow {
+        transition: transform 0.3s ease;
+    }
+
+    .btn-gradient:hover .btn-arrow {
+        transform: translateX(5px);
+    }
+
+    .section-bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 1;
+    }
+
+    .bg-gradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: radial-gradient(circle at 70% 30%, rgba(41, 102, 255, 0.1) 0%, transparent 50%);
     }
 
     /* Responsive */
     @media (max-width: 968px) {
-        .services-showcase {
+        .services-grid {
             grid-template-columns: repeat(2, 1fr);
+        }
+
+        .section-title {
+            font-size: 40px;
         }
     }
 
     @media (max-width: 768px) {
-        .servicios-resumen-index {
-            padding: 60px 15px;
+        .servicios-resumen-premium {
+            padding: 70px 15px;
         }
 
         .section-title {
             font-size: 32px;
         }
-
-        .services-showcase {
-            grid-template-columns: 1fr;
-        }
     }
 
     @media (max-width: 576px) {
+        .services-grid {
+            grid-template-columns: 1fr;
+        }
+
         .section-title {
             font-size: 28px;
+        }
+
+        .service-card {
+            padding: 30px 20px;
         }
     }
 </style>
