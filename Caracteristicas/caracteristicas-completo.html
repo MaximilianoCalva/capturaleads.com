@@ -7,12 +7,12 @@
         </div>
 
         <div class="features-grid">
-            <!-- Feature 1: Landing Pages -->
+            <!-- Feature 1: Embudos de ventas -->
             <div class="feature-card">
                 <div class="feature-icon">🎯</div>
-                <h3 class="feature-title">Landing Pages Profesionales</h3>
+                <h3 class="feature-title">Embudos de ventas Profesionales</h3>
                 <p class="feature-description">
-                    Páginas de aterrizaje optimizadas para conversión. Diseñadas específicamente para capturar leads
+                    Embudos de ventas optimizados para conversión. Diseñados específicamente para capturar leads
                     desde tus campañas de Meta Ads y Google Ads.
                 </p>
                 <ul class="feature-list">
@@ -99,6 +99,13 @@
             </div>
         </div>
     </div>
+
+    <div class="cta-section" style="text-align: center; margin-top: 60px;">
+        <a href="https://go.capturaleads.com/captura-leads/captacion-saas/" class="plan-button"
+            style="display: inline-block; background: #2966ff; color: white; padding: 15px 40px; border-radius: 50px; font-size: 16px; font-weight: 700; text-decoration: none; transition: all 0.3s ease;">Comenzar
+            Ahora</a>
+    </div>
+    </div>
 </section>
 
 <style>
@@ -110,7 +117,8 @@
 
     .caracteristicas-capturaleads {
         padding: 100px 20px;
-        background: white;
+        background-color: #05081a;
+        color: white;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
     }
 
@@ -127,14 +135,16 @@
     .section-title {
         font-size: 42px;
         font-weight: 800;
-        color: #2966ff;
         margin-bottom: 15px;
         line-height: 1.2;
+        background: linear-gradient(135deg, #ffffff 0%, #a5a5a5 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     .section-subtitle {
         font-size: 20px;
-        color: #666;
+        color: rgba(255, 255, 255, 0.6);
     }
 
     .features-grid {
@@ -145,39 +155,40 @@
     }
 
     .feature-card {
-        background: #f8f9ff;
-        border-radius: 16px;
+        background: rgba(255, 255, 255, 0.03);
+        border: 1px solid rgba(255, 255, 255, 0.1);
+        border-radius: 20px;
         padding: 35px;
         transition: all 0.3s ease;
-        border: 2px solid transparent;
     }
 
     .feature-card:hover {
         transform: translateY(-5px);
-        box-shadow: 0 12px 40px rgba(41, 102, 255, 0.12);
-        border-color: #2966ff;
+        box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
+        border-color: rgba(41, 102, 255, 0.3);
     }
 
     .feature-card.highlighted {
-        background: linear-gradient(135deg, #f8f9ff 0%, #e8edff 100%);
-        border-color: #2966ff;
+        background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.02) 100%);
+        border: 1px solid rgba(41, 102, 255, 0.3);
     }
 
     .feature-icon {
         font-size: 48px;
         margin-bottom: 20px;
+        filter: drop-shadow(0 0 20px rgba(41, 102, 255, 0.3));
     }
 
     .feature-title {
         font-size: 24px;
         font-weight: 700;
-        color: #333;
+        color: white;
         margin-bottom: 15px;
     }
 
     .feature-description {
         font-size: 16px;
-        color: #666;
+        color: rgba(255, 255, 255, 0.6);
         line-height: 1.6;
         margin-bottom: 20px;
     }
@@ -189,7 +200,7 @@
 
     .feature-list li {
         padding: 8px 0;
-        color: #555;
+        color: rgba(255, 255, 255, 0.7);
         font-size: 14px;
         display: flex;
         align-items: center;
@@ -206,10 +217,12 @@
 
     /* Value Section */
     .value-section {
-        background: #2966ff;
+        background: linear-gradient(135deg, rgba(41, 102, 255, 0.1) 0%, rgba(41, 102, 255, 0.05) 100%);
+        border: 1px solid rgba(41, 102, 255, 0.2);
         border-radius: 20px;
         padding: 60px 40px;
         text-align: center;
+        backdrop-filter: blur(10px);
     }
 
     .value-title {
@@ -217,6 +230,10 @@
         font-weight: 700;
         color: white;
         margin-bottom: 40px;
+        display: inline-block;
+        background: linear-gradient(135deg, #ffffff 0%, #a5a5a5 100%);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
     }
 
     .value-grid {
@@ -232,6 +249,7 @@
     .value-icon {
         font-size: 40px;
         margin-bottom: 15px;
+        filter: drop-shadow(0 0 10px rgba(41, 102, 255, 0.4));
     }
 
     .value-item h4 {
@@ -243,7 +261,7 @@
 
     .value-item p {
         font-size: 14px;
-        color: rgba(255, 255, 255, 0.9);
+        color: rgba(255, 255, 255, 0.6);
         line-height: 1.5;
     }
 

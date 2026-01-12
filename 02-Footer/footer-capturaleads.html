@@ -1,5 +1,6 @@
 <!-- FOOTER - CAPTURALEADS WEB -->
 <style>
+    /* Reset local */
     .footer-capturaleads * {
         margin: 0;
         padding: 0;
@@ -7,49 +8,53 @@
     }
 
     .footer-capturaleads {
-        background: #0a0e27;
+        background: rgba(10, 14, 39, 0.95);
+        backdrop-filter: blur(20px);
         color: white;
-        padding: 80px 20px 30px;
+        padding: 60px 20px 30px;
         font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
         border-top: 1px solid rgba(255, 255, 255, 0.1);
+        position: relative;
+        z-index: 10;
     }
 
-    .footer-container {
+    .footer-capturaleads .footer-container {
         max-width: 1400px;
         margin: 0 auto;
     }
 
-    .footer-grid {
+    .footer-capturaleads .footer-grid {
         display: grid;
         grid-template-columns: 2fr 1fr 1fr 1fr;
         gap: 50px;
         margin-bottom: 50px;
     }
 
-    .footer-section h3 {
-        font-size: 18px;
+    .footer-capturaleads h3 {
+        font-size: 16px;
         margin-bottom: 25px;
         font-weight: 700;
         background: linear-gradient(135deg, #2966ff 0%, #00d4ff 100%);
         -webkit-background-clip: text;
         -webkit-text-fill-color: transparent;
         background-clip: text;
+        letter-spacing: 0.5px;
     }
 
-    .footer-logo {
+    .footer-capturaleads .footer-logo {
         display: flex;
         align-items: center;
-        gap: 12px;
+        gap: 10px;
         margin-bottom: 20px;
     }
 
-    .footer-logo-icon {
-        font-size: 32px;
+    .footer-capturaleads .footer-logo-icon {
+        font-size: 24px;
         filter: drop-shadow(0 0 15px rgba(41, 102, 255, 0.5));
     }
 
-    .footer-logo-text {
-        font-size: 24px;
+    .footer-capturaleads .footer-logo-text {
+        font-size: 20px;
         font-weight: 800;
         background: linear-gradient(135deg, #2966ff 0%, #00d4ff 100%);
         -webkit-background-clip: text;
@@ -57,66 +62,67 @@
         background-clip: text;
     }
 
-    .footer-description {
-        font-size: 15px;
+    .footer-capturaleads .footer-description {
+        font-size: 14px;
         line-height: 1.6;
         color: rgba(255, 255, 255, 0.6);
         margin-bottom: 25px;
+        max-width: 350px;
     }
 
-    .social-links {
+    .footer-capturaleads .social-links {
         display: flex;
         gap: 12px;
     }
 
-    .social-link {
+    .footer-capturaleads .social-link {
         display: flex;
         align-items: center;
         justify-content: center;
-        width: 40px;
-        height: 40px;
+        width: 36px;
+        height: 36px;
         background: rgba(255, 255, 255, 0.05);
         backdrop-filter: blur(10px);
         border: 1px solid rgba(255, 255, 255, 0.1);
-        border-radius: 10px;
+        border-radius: 8px;
         color: white;
         text-decoration: none;
-        font-size: 20px;
+        font-size: 18px;
         transition: all 0.3s ease;
     }
 
-    .social-link:hover {
+    .footer-capturaleads .social-link:hover {
         background: rgba(41, 102, 255, 0.2);
         border-color: rgba(41, 102, 255, 0.5);
-        transform: translateY(-3px);
+        transform: translateY(-2px);
     }
 
-    .footer-links {
+    .footer-capturaleads .footer-links {
         list-style: none;
     }
 
-    .footer-links li {
+    .footer-capturaleads .footer-links li {
         margin-bottom: 12px;
     }
 
-    .footer-links a {
+    .footer-capturaleads .footer-links a {
         color: rgba(255, 255, 255, 0.6);
         text-decoration: none;
-        font-size: 15px;
+        font-size: 14px;
         transition: all 0.3s ease;
         display: inline-block;
     }
 
-    .footer-links a:hover {
+    .footer-capturaleads .footer-links a:hover {
         color: #2966ff;
-        padding-left: 5px;
+        transform: translateX(4px);
     }
 
-    .contact-info {
+    .footer-capturaleads .contact-info {
         list-style: none;
     }
 
-    .contact-info li {
+    .footer-capturaleads .contact-info li {
         display: flex;
         align-items: center;
         gap: 10px;
@@ -125,44 +131,45 @@
         font-size: 14px;
     }
 
-    .footer-bottom {
+    .footer-capturaleads .footer-bottom {
         border-top: 1px solid rgba(255, 255, 255, 0.1);
         padding-top: 30px;
         text-align: center;
     }
 
-    .footer-bottom p {
-        color: rgba(255, 255, 255, 0.5);
-        font-size: 14px;
+    .footer-capturaleads .footer-bottom p {
+        color: rgba(255, 255, 255, 0.4);
+        font-size: 13px;
         line-height: 1.6;
     }
 
-    .footer-bottom a {
-        color: rgba(255, 255, 255, 0.5);
+    .footer-capturaleads .footer-bottom a {
+        color: rgba(255, 255, 255, 0.4);
         text-decoration: none;
         transition: color 0.3s ease;
+        margin: 0 8px;
     }
 
-    .footer-bottom a:hover {
+    .footer-capturaleads .footer-bottom a:hover {
         color: #2966ff;
     }
 
     /* Responsive */
     @media (max-width: 968px) {
-        .footer-grid {
+        .footer-capturaleads .footer-grid {
             grid-template-columns: 1fr 1fr;
             gap: 40px;
         }
     }
 
     @media (max-width: 576px) {
-        .footer-grid {
+        .footer-capturaleads .footer-grid {
             grid-template-columns: 1fr;
             gap: 35px;
         }
 
         .footer-capturaleads {
-            padding: 60px 20px 20px;
+            padding: 40px 20px 20px;
         }
     }
 </style>
@@ -177,7 +184,7 @@
                     <span class="footer-logo-text">CapturaLeads</span>
                 </div>
                 <p class="footer-description">
-                    Plataforma profesional de captura y gestión de leads. Crea landing pages personalizadas,
+                    Plataforma profesional de captura y gestión de leads. Crea embudos de ventas personalizados,
                     captura información valiosa y visualiza todos tus datos en un workspace intuitivo.
                 </p>
                 <div class="social-links">
@@ -224,7 +231,8 @@
         </div>
 
         <div class="footer-bottom">
-            <p>&copy; 2026 CapturaLeads. Todos los derechos reservados. |
+            <p>&copy; 2026 CapturaLeads. Todos los derechos reservados.</p>
+            <p style="margin-top: 5px;">
                 <a href="https://capturaleads.com/privacidad/">Política de Privacidad</a> |
                 <a href="https://capturaleads.com/terminos/">Términos de Servicio</a>
             </p>
